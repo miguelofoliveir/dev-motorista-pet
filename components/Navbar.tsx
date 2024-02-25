@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="max-container padding-container relative z-30 py-5">
       <div className="flex justify-center pb-4 border-b-2">TRANSPORTE DE PET EM SÃO PAULO</div>
-     <div className="flex justify-center">
+     <div className="flex justify-center pt-4">
      <Link href="/">
         <Image src="/logo-pet-trim.png" alt="logo motorista de pet" width={84} height={39} />
       </Link>
