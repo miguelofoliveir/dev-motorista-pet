@@ -18,7 +18,7 @@ const Features = () => {
         </div>
 
         <div className="z-20 flex w-1/2 flex-col">
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
+          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-10">
             {FEATURES.map((feature) => (
               <FeatureItem 
                 key={feature.title}
