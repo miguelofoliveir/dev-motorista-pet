@@ -3,7 +3,7 @@ import React from "react";
 
 const Guide = () => {
   return (
-    <section className="lg:pt-12">
+    <section id="sobre-nos" className="lg:pt-12">
       <div className="padding-container max-container w-full lg:pb-24 pb-8">
         <div>
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">

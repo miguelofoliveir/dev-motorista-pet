@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "#sobre-nos", key: "how_hilink_work", label: "Sobre Nós" },
-  { href: "/", key: "services", label: "Serviços" },
-  { href: "/", key: "contact_us", label: "Contato" },
-  { href: "/", key: "pricing ", label: "Seja Motorista" },
+  { href: "#sobre-nos", key: "sobre_nos", label: "Sobre Nós" },
+  { href: "/#servicos", key: "servicos", label: "Serviços" },
+  { href: "/#contato", key: "contato", label: "Contato" },
+  { href: "/seja-motorista", key: "seja_motorista", label: "Seja Motorista" },
 ];
 
 // CAMP SECTION
@@ -82,13 +82,6 @@ export const FOOTER_TWO_LINKS = [
     ],
   },
 ];
-
-export const FOOTER_CONTACT_INFO = {
-  links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
-  ],
-};
 
 export const SOCIALS = {
   title: "Social",

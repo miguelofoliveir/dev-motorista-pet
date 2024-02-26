@@ -35,7 +35,7 @@ const Features = () => {
           </div>
         </div>
       </section>
-      <section className="lg:my-16 my-4 flex justify-center lg:p-0 p-4">
+      <section id="perguntas-frequentes" className="lg:my-16 my-4 flex justify-center lg:p-0 p-4">
         <div className="container bg-gray-10 rounded-lg lg:p-8 p-4">
           <h2 className="bold-20 lg:bold-32 lg:pt-8 pt-4 pb-4">PERGUNTAS FREQUENTES</h2>
           <div className="pt-4">
