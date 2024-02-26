@@ -4,7 +4,7 @@ import React from "react";
 const Guide = () => {
   return (
     <section className="lg:pt-12">
-      <div className="padding-container max-container w-full pb-24">
+      <div className="padding-container max-container w-full lg:pb-24 pb-8">
         <div>
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
             SOBRE O MOTORISTA
@@ -12,17 +12,17 @@ const Guide = () => {
         </div>
         <div className="lg:pt-12">
           <div>
-            <div className="flex">
+            <div className="lg:flex lg:pt-0 pt-4">
               <div className="lg:pr-8 lg:w-1/2">
                 <Image
                   src="/motorista-dog.jpg"
                   alt="Motorista e o pet"
-                  className="w-auto"
+                  className="w-auto rounded-lg"
                   width={300}
                   height={29}
                 />
               </div>
-              <div className="lg:w-1/2">
+              <div className="lg:w-1/2 lg:pt-0 pt-8">
                 <h2 className="bold-20 lg:bold-32">
                   CONFIANÇA, GENTILEZA, PONTUALIDADE, CUIDADO E AMOR PELOS PETS.
                 </h2>
@@ -63,7 +63,7 @@ const Guide = () => {
             </div>
           </div>
           <div>
-            <div className="flex">
+            <div className="lg:flex">
               <div className="lg:w-1/2">
                 <p className="regular-16 text-gray-30 pt-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -99,11 +99,11 @@ const Guide = () => {
                   mattis.
                 </p>
               </div>
-              <div className="lg:px-4 lg:w-1/2">
+              <div className="lg:px-4 px-0 lg:pt-0 pt-4 lg:w-1/2">
                 <Image
                   src="/pets-dog-cat.jpg"
                   alt="Motorista e o pet"
-                  className="w-auto"
+                  className="w-auto rounded-lg"
                   width={300}
                   height={29}
                 />
