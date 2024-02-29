@@ -69,6 +69,14 @@ const Footer = () => {
           2024 Motorista de Pet | Todos os direitos reservados
         </p>
       </div>
+      <a className="fixed lg:bottom-10 bottom-5 lg:right-10 right-5" href="https://web.whatsapp.com/send?phone=5511950644499">
+      <Image
+                src="ic-whatsapp.png"
+                alt="Botão de contato do WhatsApp"
+                width={100}
+                height={100}
+              />
+    </a>
     </footer>
   );
 };
