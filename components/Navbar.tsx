@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <nav className="max-container padding-container relative z-30 py-5">
-      <div className="flex justify-center pb-4 border-b-2">
+      <div className="flex justify-center pb-4 border-b-2 cinzel">
         TRANSPORTE DE PET EM SÃO PAULO
       </div>
       <div className="flex justify-center pt-4">
@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="w-4/12 flex justify-end items-center">
-          <ul className="regular-14 flex gap-4 text-gray-30">
+          <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
                 <Image src={link.icon} alt="logo" width={24} height={24} />
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex justify-center items-center lg:mt-8">
-        <ul className="hidden h-full gap-12 lg:flex">
+        <ul className="hidden h-full gap-12 lg:flex cinzel">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <div className="lg:flexCenter lg:ml-8 hidden">
+        <div className="lg:flexCenter lg:ml-8 hidden cinzel">
           <Button
             type="button"
             title="Agendar Corrida"

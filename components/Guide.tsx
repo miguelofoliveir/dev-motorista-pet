@@ -6,7 +6,7 @@ const Guide = () => {
     <section id="sobre-nos" className="lg:pt-12">
       <div className="padding-container max-container w-full lg:pb-24 pb-8">
         <div>
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px] cinzel">
             SOBRE O MOTORISTA
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Guide = () => {
                 />
               </div>
               <div className="lg:w-1/2 lg:pt-0 pt-8">
-                <h2 className="bold-20 lg:bold-32">
+                <h2 className="bold-20 lg:bold-32 cinzel">
                   CONFIANÇA, GENTILEZA, PONTUALIDADE, CUIDADO E AMOR PELOS PETS.
                 </h2>
                 <p className="regular-16 text-gray-30 pt-4">

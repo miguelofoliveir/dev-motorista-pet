@@ -9,7 +9,7 @@ const Features = () => {
         id="servicos"
         className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-24 py-4"
       >
-        <h2 className="bold-40 lg:bold-64">Serviços</h2>
+        <h2 className="bold-40 lg:bold-64 cinzel">Serviços</h2>
         <div className="max-container padding-container relative w-full lg:flex justify-end">
           <div className="lg:w-1/2 lg:pr-12 lg:pt-12 pt-6">
             <Image
@@ -37,9 +37,9 @@ const Features = () => {
       </section>
       <section id="perguntas-frequentes" className="lg:my-16 my-4 flex justify-center lg:p-0 p-4">
         <div className="container bg-gray-10 rounded-lg lg:p-8 p-4">
-          <h2 className="bold-20 lg:bold-32 lg:pt-8 pt-4 pb-4">PERGUNTAS FREQUENTES</h2>
+          <h2 className="bold-20 lg:bold-32 lg:pt-8 pt-4 pb-4 cinzel">PERGUNTAS FREQUENTES</h2>
           <div className="pt-4">
-            <b>Pergunta 1</b>
+            <b className="cinzel">Pergunta 1</b>
             <p className="regular-16 text-gray-30 pt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
               blandit odio. Nulla vel cursus lectus, non accumsan dolor.
@@ -52,7 +52,7 @@ const Features = () => {
             </p>
           </div>
           <div className="pt-4">
-            <b>Pergunta 2</b>
+            <b className="cinzel">Pergunta 2</b>
             <p className="regular-16 text-gray-30 pt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
               blandit odio. Nulla vel cursus lectus, non accumsan dolor.
@@ -65,7 +65,7 @@ const Features = () => {
             </p>
           </div>
           <div className="pt-4">
-            <b>Pergunta 2</b>
+            <b className="cinzel">Pergunta 3</b>
             <p className="regular-16 text-gray-30 pt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
               blandit odio. Nulla vel cursus lectus, non accumsan dolor.
@@ -95,7 +95,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
       <div className="rounded-full p-4 lg:p-7 bg-green-50">
         <Image src={icon} alt="map" width={28} height={28} />
       </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
+      <h2 className="bold-20 lg:bold-32 mt-5 capitalize cinzel">{title}</h2>
       <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
         {description}
       </p>

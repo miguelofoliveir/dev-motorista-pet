@@ -10,7 +10,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flexCenter mb-8">
-      <div className="padding-container max-container flex w-full flex-col gap-4">
+      <div className="container flex w-full flex-col gap-4">
         <div className="lg:flex items-start justify-center md:flex-row">
           <div className="flex justify-center lg:w-1/4">
             <Link href="/" className="mb-10">
@@ -23,7 +23,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center text-center lg:w-1/4 md:flex-1">
+          <div className="flex justify-center text-center lg:w-1/4 md:flex-1 cinzel">
             {FOOTER_ONE_LINKS.map((columns) => (
               <FooterColumn title="">
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
@@ -37,7 +37,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center text-center lg:w-1/4 lg:mt-0 mt-4">
+          <div className="flex justify-center text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
             {FOOTER_TWO_LINKS.map((columns) => (
               <FooterColumn title="">
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
@@ -51,7 +51,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center lg:w-1/4 lg:mt-0 mt-6">
+          <div className="flex justify-center lg:w-1/4 lg:mt-0 mt-6 cinzel">
             <FooterColumn title="NOS SIGA NAS REDES SOCIAIS">
               <ul className="regular-14 flex justify-center gap-4 text-gray-30">
                 {SOCIALS.links.map((link) => (
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">
+        <p className="regular-14 w-full text-center text-gray-30 cinzel">
           2024 Motorista de Pet | Todos os direitos reservados
         </p>
       </div>
