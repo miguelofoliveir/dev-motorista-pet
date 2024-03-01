@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -30,7 +30,7 @@ body {
   }
 
   .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+    @apply bg-green-90 px-6 py-3 text-white transition-all hover:bg-black;
   }
   .btn_dark_green_outline {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
@@ -173,4 +173,52 @@ html {
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+.green-two-bg {
+  background-color: #ddefef;
+}
+
+.green-two-color {
+  color: #ddefef;
+}
+
+.green-one-bg {
+  background-color: #e5f5f5;
+}
+
+.green-one-color {
+  color: #e5f5f5;
+}
+
+.green-main-bg {
+  background-color: #64bcba;
+}
+
+.green-main-color {
+  color: #64bcba;
+}
+
+.orange-main-bg {
+  background-color: #f39100;
+}
+
+.orange-main-color {
+  color: #f39100;
+}
+
+.rose-two-bg {
+  background-color: #e5c29b;
+}
+
+.rose-two-color {
+  color: #e5c29b;
+}
+
+.rose-one-bg {
+  background-color: #ecd1b4;
+}
+
+.rose-one-color {
+  color: #ecd1b4;
 }

@@ -32,11 +32,11 @@ const Navbar = () => {
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
 
   return (
-    <nav className="max-container padding-container relative z-30 py-5">
-      <div className="flex justify-center pb-4 border-b-2 cinzel">
+    <nav className="max-container padding-container relative z-30 pb-5">
+      <div className="flex justify-center py-4 cinzel green-one-bg">
         TRANSPORTE DE PET EM SÃO PAULO
       </div>
-      <div className="flex justify-center pt-4">
+      <div className="flex justify-center py-4 border-b">
         <div className="w-4/12 pt-4">
           <div onClick={toggleMenu} className="relative bg-white">
             <Image
@@ -84,7 +84,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center lg:mt-8">
+      <div className="flex justify-center items-center lg:mt-8 border-b lg:pb-6 pb-0">
         <ul className="hidden h-full gap-12 lg:flex cinzel">
           {NAV_LINKS.map((link) => (
             <Link
@@ -101,7 +101,7 @@ const Navbar = () => {
             <Button
               type="button"
               title="Agendar Corrida"
-              variant="btn_green_light"
+              variant="green-main-bg text-white px-6 py-3"
             />
           </a>
         </div>

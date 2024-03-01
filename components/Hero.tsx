@@ -13,7 +13,7 @@ const Hero = () => {
 
         <div className="flex mt-6 flex-col w-full gap-3 cinzel">
           <a className="flex justify-center lg:justify-normal" href={NUMBER_LINK_WHATSAPP}>
-            <Button type="button" title="Agendar Corrida" variant="btn_green" />
+            <Button type="button" title="Agendar Corrida" variant="green-main-bg text-white px-6 py-3" />
           </a>
         </div>
       </div>
