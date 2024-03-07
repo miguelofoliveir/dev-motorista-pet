@@ -4,10 +4,10 @@ import React from "react";
 const Guide = () => {
   return (
     <section id="sobre-nos" className="lg:pt-12">
-      <div className="padding-container max-container w-full lg:pb-24 pb-8">
+      <div className="padding-container w-full lg:pb-24 pb-8 lg:px-8 px-4">
         <div>
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px] cinzel">
-            SOBRE O MOTORISTA
+          <h2 className="bold-40 lg:bold-64 cinzel">
+            QUEM SOMOS NÓS
           </h2>
         </div>
         <div className="lg:pt-12">

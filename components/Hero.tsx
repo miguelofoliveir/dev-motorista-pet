@@ -4,7 +4,7 @@ import { NUMBER_LINK_WHATSAPP } from "@/constants";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container lg:flex flex-col gap-20 py-4 lg:pb-32 pb-10 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="w-full lg:px-8 px-4 lg:flex flex-col gap-20 py-4 lg:pb-32 pb-10 md:gap-28 lg:py-20 xl:flex-row">
       <div className="relative z-20 lg:flex lg:flex-1 flex-col xl:w-1/2 lg:pt-8">
         <h1 className="bold-32 lg:bold-88 cinzel">TRANSPORTE DE PET AFETIVO</h1>
         <p className="regular-14 mt-6 text-gray-30 xl:max-w-[520px]">

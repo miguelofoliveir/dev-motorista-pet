@@ -32,9 +32,9 @@ const Navbar = () => {
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
 
   return (
-    <nav className="max-container padding-container relative z-30 pb-5">
+    <nav className="w-full padding-container relative z-30 pb-5">
       <div className="flex justify-center py-4 cinzel green-one-bg">
-        TRANSPORTE DE PET EM SÃO PAULO
+        Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
       <div className="flex justify-center py-4 border-b">
         <div className="w-4/12 pt-4">
@@ -69,12 +69,12 @@ const Navbar = () => {
             <Image
               src="/logo-pet-trim.png"
               alt="logo motorista de pet"
-              width={84}
-              height={39}
+              width={104}
+              height={59}
             />
           </Link>
         </div>
-        <div className="w-4/12 flex justify-end items-center">
+        <div className="w-4/12 flex justify-end items-center lg:pr-8 pr-4">
           <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
@@ -90,7 +90,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+              className="regular-20 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
             >
               {link.label}
             </Link>
