@@ -97,7 +97,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="lg:flexCenter lg:ml-8 hidden cinzel">
-          <a href={NUMBER_LINK_WHATSAPP}>
+          <a href="/contato">
             <Button
               type="button"
               title="Agendar Corrida"

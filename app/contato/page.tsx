@@ -69,7 +69,7 @@ export default function Contato() {
                   id="dataHora"
                   value={formData.dataHora}
                   onChange={handleChange}
-                  className="input"
+                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
                 />
               </div>
               <div className="flex flex-col">
@@ -82,7 +82,7 @@ export default function Contato() {
                   id="enderecoPartida"
                   value={formData.enderecoPartida}
                   onChange={handleChange}
-                  className="input"
+                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
                 />
               </div>
               <div className="flex flex-col">
@@ -95,7 +95,7 @@ export default function Contato() {
                   id="enderecoDestino"
                   value={formData.enderecoDestino}
                   onChange={handleChange}
-                  className="input"
+                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
                 />
               </div>
               <div className="flex flex-col">
@@ -108,7 +108,7 @@ export default function Contato() {
                   id="quantidadePets"
                   value={formData.quantidadePets}
                   onChange={handleChange}
-                  className="input"
+                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
                 />
               </div>
               <button
