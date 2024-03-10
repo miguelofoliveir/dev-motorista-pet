@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
       <a
         className="fixed lg:bottom-10 bottom-5 lg:right-10 right-5"
-        href={NUMBER_LINK_WHATSAPP}
+        href="/contato"
       >
         <Image
           src="ic-whatsapp.png"

@@ -4,30 +4,22 @@ import React, { useState } from "react";
 
 interface FormData {
   nome: string;
-  sobrenome: string;
-  email: string;
-  celular: string;
-  cep: string;
-  numero: string;
-  transportePet: string;
-  anoCarro: string;
+  dataHora: string;
+  enderecoPartida: string;
+  enderecoDestino: string;
+  quantidadePets: string;
 }
 
 export default function Contato() {
   const [formData, setFormData] = useState<FormData>({
     nome: "",
-    sobrenome: "",
-    email: "",
-    celular: "",
-    cep: "",
-    numero: "",
-    transportePet: "",
-    anoCarro: "",
+    dataHora: "",
+    enderecoPartida: "",
+    enderecoDestino: "",
+    quantidadePets: "",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -41,7 +33,7 @@ export default function Contato() {
   };
 
   function enviarParaWhatsApp(formData: FormData) {
-    const mensagem = `Olá, aqui estão os dados do formulário:\nNome: ${formData.nome} ${formData.sobrenome}\nE-mail: ${formData.email}\nCelular: ${formData.celular}\nCEP: ${formData.cep}\nNúmero: ${formData.numero}\nJá trabalha com transporte de pet? ${formData.transportePet}\nAno do carro: ${formData.anoCarro}`;
+    const mensagem = `Olá, aqui estão os dados do formulário de Contato:\nNome: ${formData.nome}\nData e Hora: ${formData.dataHora}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
@@ -68,117 +60,55 @@ export default function Contato() {
           <div className="w-1/2 lg:pr-12">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col">
-                <label htmlFor="nome" className="mb-2">
-                  Nome:
+                <label htmlFor="dataHora" className="mb-2">
+                  Data e Hora:
                 </label>
                 <input
-                  type="text"
-                  name="nome"
-                  id="nome"
-                  placeholder="Nome"
-                  value={formData.nome}
+                  type="datetime-local"
+                  name="dataHora"
+                  id="dataHora"
+                  value={formData.dataHora}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
+                  className="input"
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="sobrenome" className="mb-2">
-                  Sobrenome:
+                <label htmlFor="enderecoPartida" className="mb-2">
+                  Endereço de Partida:
                 </label>
                 <input
                   type="text"
-                  name="sobrenome"
-                  id="sobrenome"
-                  placeholder="Sobrenome"
-                  value={formData.sobrenome}
+                  name="enderecoPartida"
+                  id="enderecoPartida"
+                  value={formData.enderecoPartida}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
+                  className="input"
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="email" className="mb-2">
-                  E-mail:
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="celular" className="mb-2">
-                  Celular:
+                <label htmlFor="enderecoDestino" className="mb-2">
+                  Endereço de Destino:
                 </label>
                 <input
                   type="text"
-                  name="celular"
-                  id="celular"
-                  placeholder="Celular"
-                  value={formData.celular}
+                  name="enderecoDestino"
+                  id="enderecoDestino"
+                  value={formData.enderecoDestino}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
+                  className="input"
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="cep" className="mb-2">
-                  CEP:
+                <label htmlFor="quantidadePets" className="mb-2">
+                  Quantidade de Pets:
                 </label>
                 <input
-                  type="text"
-                  name="cep"
-                  id="cep"
-                  placeholder="CEP"
-                  value={formData.cep}
+                  type="number"
+                  name="quantidadePets"
+                  id="quantidadePets"
+                  value={formData.quantidadePets}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="numero" className="mb-2">
-                  Número:
-                </label>
-                <input
-                  type="text"
-                  name="numero"
-                  id="numero"
-                  placeholder="Número"
-                  value={formData.numero}
-                  onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="transportePet" className="mb-2">
-                  Já trabalha com transporte de pet?
-                </label>
-                <select
-                  name="transportePet"
-                  id="transportePet"
-                  value={formData.transportePet}
-                  onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
-                >
-                  <option value="">Selecione</option>
-                  <option value="sim">Sim</option>
-                  <option value="nao">Não</option>
-                </select>
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="anoCarro" className="mb-2">
-                  Qual o ano do seu carro?
-                </label>
-                <input
-                  type="text"
-                  name="anoCarro"
-                  id="anoCarro"
-                  placeholder="Qual o ano do seu carro?"
-                  value={formData.anoCarro}
-                  onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
+                  className="input"
                 />
               </div>
               <button
