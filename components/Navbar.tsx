@@ -32,12 +32,12 @@ const Navbar = () => {
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
 
   return (
-    <nav className="w-full padding-container relative z-30 pb-5">
-      <div className="flex justify-center py-4 cinzel green-one-bg">
+    <nav className="w-full relative z-30 pb-5">
+      <div className="flex justify-center text-center p-4 cinzel green-one-bg">
         Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
       <div className="flex justify-center py-4 border-b">
-        <div className="w-4/12 pt-4">
+        <div className="w-4/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
             <Image
               src="menu.svg"

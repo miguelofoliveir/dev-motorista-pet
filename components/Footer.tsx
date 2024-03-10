@@ -24,7 +24,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center text-left lg:w-1/4 md:flex-1 cinzel">
+          <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
             {FOOTER_ONE_LINKS.map((columns) => (
               <FooterColumn title="">
                 <ul className="regular-16 flex flex-col gap-4 text-black">
@@ -38,7 +38,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center text-left lg:w-1/4 lg:mt-0 mt-4 cinzel">
+          <div className="flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
             {FOOTER_TWO_LINKS.map((columns) => (
               <FooterColumn title="">
                 <ul className="regular-16 flex flex-col gap-4 text-black">

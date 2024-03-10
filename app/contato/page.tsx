@@ -57,7 +57,7 @@ export default function Contato() {
       <div className="lg:px-8 px-4 gap-20 py-4 lg:pb-32 pb-10 md:gap-28 lg:py-20">
         <h2 className="bold-24 lg:bold-32 cinzel">CONTATO</h2>
         <div className="lg:flex pt-4">
-          <div className="w-1/2 lg:pr-12">
+          <div className="lg:w-1/2 w-full lg:pr-12">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col">
                 <label htmlFor="dataHora" className="mb-2">
@@ -119,13 +119,21 @@ export default function Contato() {
               </button>
             </form>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 w-full lg:mt-0 mt-8">
             <div className="rounded-lg green-one-bg h-auto p-4">
               <p className="bold-16">
                 ENTRE EM CONTATO CONOSCO PARA SUGESTÕES, DÚVIDAS OU PARCERIAS
               </p>
-              <p>contato@motoristapet.com.br</p>
-              <p>marketing@motoristapet.com.br</p>
+              <p>
+                <a href="mailto:contato@motoristapet.com.br">
+                  contato@motoristapet.com.br
+                </a>
+              </p>
+              <p>
+                <a href="mailto:marketing@motoristapet.com.br">
+                  marketing@motoristapet.com.br
+                </a>
+              </p>
             </div>
           </div>
         </div>
