@@ -62,9 +62,9 @@ export default function SejaMotorista() {
   }
 
   return (
-    <section className="lg:px-8 px-4">
+    <section className="lg:px-8 px-4 pb-8">
       <div className="lg:flex flex-col gap-20 py-4 lg:pb-32 pb-10 md:gap-28 lg:py-20 xl:flex-row">
-        <div className="lg:pt-0 pt-8 w-1/4">
+        <div className="lg:pt-0 pt-8 lg:w-1/4">
           <Image
             src="/motorista-pet.jpg"
             alt="Motorista e o pet"
