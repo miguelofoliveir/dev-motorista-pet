@@ -64,7 +64,7 @@ export default function Contato() {
     <section>
       <div className="lg:px-8 px-4 gap-20 py-4 lg:pb-32 pb-10 md:gap-28 lg:py-20">
         <h2 className="bold-24 lg:bold-32 cinzel">CONTATO</h2>
-        <div className="flex pt-4">
+        <div className="lg:flex pt-4">
           <div className="w-1/2 lg:pr-12">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col">
