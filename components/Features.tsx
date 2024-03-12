@@ -9,7 +9,7 @@ const Features = () => {
         id="servicos"
         className="flex-col green-one-bg flexCenter overflow-hidden bg-center bg-no-repeat lg:py-24 py-4"
       >
-        <h2 className="bold-40 lg:bold-64 cinzel">Serviços</h2>
+        <h2 className="bold-32 lg:bold-64 cinzel">SERVIÇOS</h2>
         <div className="padding-container relative w-full lg:flex justify-end lg:px-8 px-4">
           <div className="lg:w-1/3 lg:pr-12 lg:pt-12 pt-6">
             <Image

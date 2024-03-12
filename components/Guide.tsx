@@ -6,7 +6,7 @@ const Guide = () => {
     <section id="sobre-nos" className="lg:pt-12">
       <div className="padding-container w-full lg:pb-24 pb-8 lg:px-8 px-4">
         <div>
-          <h2 className="bold-40 lg:bold-64 cinzel">QUEM SOMOS NÓS</h2>
+          <h2 className="bold-32 lg:bold-64 cinzel">QUEM SOMOS NÓS</h2>
         </div>
         <div className="lg:pt-12">
           <div>
