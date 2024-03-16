@@ -19,56 +19,49 @@ export const PEOPLE_URL = [
 export const FEATURES = [
   {
     title: "PET SHOP",
-    icon: "/location.svg",
+    icon: "/location.png",
     variant: "green",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
   {
     title: "VETERINÁRIO",
-    icon: "/location.svg",
+    icon: "/location.png",
     variant: "green",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
   {
     title: "CRECHE",
-    icon: "/location.svg",
+    icon: "/location.png",
     variant: "green",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
   {
     title: "VIAGENS",
-    icon: "/location.svg",
-    variant: "orange",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
-  },
-  {
-    title: "VIAGENS",
-    icon: "/location.svg",
-    variant: "orange",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
-  },
-  {
-    title: "E PARA ONDE VOCÊ QUISER",
-    icon: "/location.svg",
+    icon: "/location.png",
     variant: "orange",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
   {
     title: "INTERMUNICIPAL",
-    icon: "/location.svg",
+    icon: "/location.png",
     variant: "orange",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
   {
     title: "INTERESTADUAL",
-    icon: "/location.svg",
+    icon: "/location.png",
+    variant: "orange",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
+  },
+  {
+    title: "ONDE VOCÊ QUISER",
+    icon: "/location.png",
     variant: "orange",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",

@@ -1,8 +1,6 @@
 import {
   FOOTER_ONE_LINKS,
   FOOTER_TWO_LINKS,
-  NUMBER_LINK_WHATSAPP,
-  SOCIALS,
 } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,9 +36,9 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
-            {FOOTER_TWO_LINKS.map((columns) => (
-              <FooterColumn title="">
+          <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
+            {FOOTER_ONE_LINKS.map((columns, index) => (
+              <FooterColumn key={`footer-one-column-${index}`} title="">
                 <ul className="regular-16 flex flex-col gap-4 text-black">
                   {columns.links.map((link) => (
                     <Link href={link.href} key={link.label}>
@@ -52,22 +50,25 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center lg:w-1/4 lg:mt-0 mt-6 cinzel">
-            <FooterColumn title="NOS SIGA NAS REDES SOCIAIS">
-              <ul className="regular-14 flex justify-center gap-4 text-black">
-                {SOCIALS.links.map((link) => (
-                  <Link className="mt-2" href={link.link} key={link.icon}>
-                    <Image src={link.icon} alt="logo" width={24} height={24} />
-                  </Link>
-                ))}
-              </ul>
-            </FooterColumn>
+          <div className="flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
+            {FOOTER_TWO_LINKS.map((columns, index) => (
+              <FooterColumn key={`footer-two-column-${index}`} title="">
+                <ul className="regular-16 flex flex-col gap-4 text-black">
+                  {columns.links.map((link) => (
+                    <Link href={link.href} key={link.label}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </ul>
+              </FooterColumn>
+            ))}
           </div>
         </div>
 
         <div />
         <p className="regular-14 w-full text-center text-black cinzel">
-          2024 Motorista de Pet | Todos os direitos reservados CNPJ 27476875/0001-10
+          2024 Motorista de Pet | Todos os direitos reservados CNPJ
+          27476875/0001-10
         </p>
       </div>
       <a

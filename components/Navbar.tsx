@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
 
   return (
-    <nav className="w-full relative z-30 pb-5">
+    <nav className="w-full relative z-30">
       <div className="flex justify-center text-center p-4 cinzel green-one-bg">
         Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
