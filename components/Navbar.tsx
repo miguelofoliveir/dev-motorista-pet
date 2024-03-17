@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { useEffect, useRef, useState } from "react";
+import ScrollAnimation from "./ScrollAnimation";
 
 const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -31,6 +32,15 @@ const Navbar = () => {
     };
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
 
+  const growVariants = {
+    hidden: { scale: 0.5, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 100, damping: 10, duration: 2 },
+    },
+  };
+
   return (
     <nav className="w-full relative z-30">
       <div className="flex justify-center text-center p-4 cinzel green-one-bg">
@@ -39,13 +49,15 @@ const Navbar = () => {
       <div className="flex justify-center py-4 border-b">
         <div className="w-4/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
-            <Image
-              src="menu.svg"
-              alt="menu"
-              width={32}
-              height={32}
-              className="inline-block cursor-pointer lg:hidden"
-            />
+            <ScrollAnimation variants={growVariants}>
+              <Image
+                src="menu.svg"
+                alt="menu"
+                width={32}
+                height={32}
+                className="inline-block cursor-pointer lg:hidden"
+              />
+            </ScrollAnimation>
             {isMenuVisible && (
               <ul
                 ref={menuRef}
@@ -66,19 +78,23 @@ const Navbar = () => {
         </div>
         <div className="w-4/12 flex justify-center lg:mr-0 mr-8">
           <Link href="/">
-            <Image
-              src="/logo-pet-trim.png"
-              alt="logo motorista de pet"
-              width={104}
-              height={59}
-            />
+            <ScrollAnimation variants={growVariants}>
+              <Image
+                src="/logo-pet-trim.png"
+                alt="logo motorista de pet"
+                width={104}
+                height={59}
+              />
+            </ScrollAnimation>
           </Link>
         </div>
         <div className="w-4/12 flex justify-end items-center lg:pr-8 pr-4">
           <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
-                <Image src={link.icon} alt="logo" width={24} height={24} />
+                <ScrollAnimation variants={growVariants}>
+                  <Image src={link.icon} alt="logo" width={24} height={24} />
+                </ScrollAnimation>
               </Link>
             ))}
           </ul>
@@ -97,7 +113,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="lg:flexCenter lg:ml-8 hidden cinzel">
-          <a href="/contato">
+          <a href="/agendar-corrida">
             <Button
               type="button"
               title="Agendar Corrida"

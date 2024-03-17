@@ -1,9 +1,8 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "#sobre-nos", key: "sobre_nos", label: "Sobre Nós" },
-  { href: "/#servicos", key: "servicos", label: "Serviços" },
-  { href: "/contato", key: "contato", label: "Contato" },
+  { href: "./#sobre-nos", key: "sobre_nos", label: "Sobre Nós" },
+  { href: "./#servicos", key: "servicos", label: "Serviços" },
   { href: "/quero-ser-motorista", key: "quero_ser_motorista", label: "Quero ser motorista" },
 ];
 
@@ -72,10 +71,10 @@ export const FEATURES = [
 export const FOOTER_ONE_LINKS = [
   {
     links: [
-      { label: "SOBRE NÓS", href: "#sobre-nos" },
-      { label: "SERVIÇOS", href: "#servicos" },
+      { label: "SOBRE NÓS", href: "/#sobre-nos" },
+      { label: "SERVIÇOS", href: "/#servicos" },
       { label: "QUERO SER MOTORISTA", href: "/quero-ser-motorista" },
-      { label: "CONTATO", href: "contato" },
+      { label: "AGENDAR CORRIDA", href: "/agendar-corrida" },
     ],
   },
 ];

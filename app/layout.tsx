@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 export const metadata: Metadata = {
   title: "Motorista de Pet",
