@@ -73,6 +73,19 @@ export default function Contato() {
                 AGENDAMENTO DE CORRIDA
               </h2>
               <form onSubmit={handleSubmit} className="space-y-4 regular-14">
+              <div className="flex flex-col">
+                  <label htmlFor="dataHora" className="mb-2">
+                    Nome Completo:
+                  </label>
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    value={formData.nome}
+                    onChange={handleChange}
+                    className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus-visible:border-teal-500 focus-visible:ring focus-visible:ring-teal-500 focus-visible:ring-opacity-50"
+                  />
+                </div>
                 <div className="flex flex-col">
                   <label htmlFor="dataHora" className="mb-2">
                     Data e Hora:
