@@ -1,7 +1,4 @@
-import {
-  FOOTER_ONE_LINKS,
-  FOOTER_TWO_LINKS,
-} from "@/constants";
+import { FOOTER_ONE_LINKS, FOOTER_TWO_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -21,21 +18,6 @@ const Footer = () => {
               />
             </Link>
           </div>
-
-          <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
-            {FOOTER_ONE_LINKS.map((columns) => (
-              <FooterColumn title="">
-                <ul className="lg:regular-16 regular-14 flex flex-col gap-4 text-black">
-                  {columns.links.map((link) => (
-                    <Link href={link.href} key={link.label}>
-                      {link.label}
-                    </Link>
-                  ))}
-                </ul>
-              </FooterColumn>
-            ))}
-          </div>
-
           <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
             {FOOTER_ONE_LINKS.map((columns, index) => (
               <FooterColumn key={`footer-one-column-${index}`} title="">
@@ -49,7 +31,6 @@ const Footer = () => {
               </FooterColumn>
             ))}
           </div>
-
           <div className="flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
             {FOOTER_TWO_LINKS.map((columns, index) => (
               <FooterColumn key={`footer-two-column-${index}`} title="">
