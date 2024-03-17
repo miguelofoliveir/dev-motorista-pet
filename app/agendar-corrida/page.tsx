@@ -34,7 +34,7 @@ export default function Contato() {
   };
 
   function enviarParaWhatsApp(formData: FormData) {
-    const mensagem = `Olá, aqui estão os dados do formulário de Agendar Corrida:\nNome: ${formData.nome}\nData e Hora: ${formData.dataHora}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
+    const mensagem = `Olá! Gostaria de agendar uma corrida:\nNome: ${formData.nome}\nData e Hora: ${formData.dataHora}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
