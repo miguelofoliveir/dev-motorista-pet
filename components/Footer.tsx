@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div />
-        <p className="regular-14 py-3 w-full text-center text-black cinzel green-one-bg">
+        <p className="regular-12 py-3 w-full text-center text-black cinzel green-one-bg lg:px-0 px-8">
           2024 Motorista de Pet | Todos os direitos reservados CNPJ
           27476875/0001-10
         </p>
