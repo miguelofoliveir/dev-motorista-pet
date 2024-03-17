@@ -34,7 +34,16 @@ export default function Contato() {
   };
 
   function enviarParaWhatsApp(formData: FormData) {
-    const mensagem = `Olá! Gostaria de agendar uma corrida:\nNome: ${formData.nome}\nData e Hora: ${formData.dataHora}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
+    const dataHoraFormatada = new Intl.DateTimeFormat("pt-BR", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).format(new Date(formData.dataHora));
+
+    const mensagem = `Olá! Gostaria de agendar uma corrida:\nNome: ${formData.nome}\nData e Hora: ${dataHoraFormatada}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
@@ -73,7 +82,7 @@ export default function Contato() {
                 AGENDAMENTO DE CORRIDA
               </h2>
               <form onSubmit={handleSubmit} className="space-y-4 regular-14">
-              <div className="flex flex-col">
+                <div className="flex flex-col">
                   <label htmlFor="dataHora" className="mb-2">
                     Nome Completo:
                   </label>

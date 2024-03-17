@@ -43,47 +43,63 @@ const Navbar = () => {
 
   return (
     <nav className="w-full relative z-30">
-      <div className="flex justify-center text-center p-4 cinzel green-one-bg">
+      <div className="flex lg:regular-16 regular-14 justify-center text-center p-4 cinzel green-one-bg">
         Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
       <div className="flex justify-center py-4 border-b">
-        <div className="w-4/12 pt-4 px-6">
+        <div className="w-10/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
             <ScrollAnimation variants={growVariants}>
               <Image
                 src="menu.svg"
                 alt="menu"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
                 className="inline-block cursor-pointer lg:hidden"
               />
             </ScrollAnimation>
             {isMenuVisible && (
               <ul
                 ref={menuRef}
-                className="block h-auto gap-14 lg:hidden cinzel absolute bg-white z-50"
+                className="h-auto lg:hidden cinzel absolute w-72 top-full rounded-lg bg-white z-50"
               >
                 {NAV_LINKS.map((link) => (
                   <Link
                     href={link.href}
                     key={link.key}
-                    className="regular-16 p-2 w-52 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                    className="regular-16 p-4 w-full text-gray-50 flex cursor-pointer pb-1.5 transition-all hover:font-bold"
                   >
                     {link.label}
                   </Link>
                 ))}
-                 <Link
-                    href="/agendar-corrida"
-                    key="agendar-corrida"
-                    className="regular-16 p-2 w-52 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-                  >
-                    AGENDAR CORRIDA
-                  </Link>
+                <Link
+                  href="/agendar-corrida"
+                  key="agendar-corrida"
+                  className="regular-16 p-4 w-full text-gray-50 flex cursor-pointer pb-1.5 transition-all hover:font-bold"
+                >
+                  AGENDAR CORRIDA
+                </Link>
+                <div className="w-full flex justify-center items-center p-4">
+                  <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
+                    {SOCIALS.links.map((link) => (
+                      <Link className="mt-2" href={link.link} key={link.icon}>
+                        <ScrollAnimation variants={growVariants}>
+                          <Image
+                            src={link.icon}
+                            alt="logo"
+                            width={24}
+                            height={24}
+                          />
+                        </ScrollAnimation>
+                      </Link>
+                    ))}
+                  </ul>
+                </div>
               </ul>
             )}
           </div>
         </div>
-        <div className="w-4/12 flex justify-center lg:mr-0 mr-8">
+        <div className="lg:w-4/12 w-2/12 flex justify-center lg:mr-0 mr-8">
           <Link href="/">
             <ScrollAnimation variants={growVariants}>
               <Image
@@ -95,7 +111,7 @@ const Navbar = () => {
             </ScrollAnimation>
           </Link>
         </div>
-        <div className="w-4/12 flex justify-end items-center lg:pr-8 pr-4">
+        <div className="lg:w-4/12 lg:flex hidden justify-end items-center lg:pr-8 pr-4">
           <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
