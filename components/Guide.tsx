@@ -15,7 +15,7 @@ const Guide = () => {
         <div className="lg:pt-12">
           <div>
             <div className="lg:flex lg:pt-0 pt-4">
-              <div className="lg:w-3/12 lg:pt-0 pt-8 lg:pr-4">
+              <div className="lg:w-3/12 lg:pt-0 pt-0 lg:pr-4">
                 <p className="regular-14 lg:pt-16 text-justify indent-4">
                   Ao iniciar um trabalho de transporte de pets, sem pretenção
                   alguma, Renato começou a registrar suas viagens mostrando seu
@@ -32,7 +32,7 @@ const Guide = () => {
                   primeiro contato até a conclusão da viagem.
                 </p>
               </div>
-              <div className="lg:w-6/12 flex justify-center">
+              <div className="lg:w-6/12 flex justify-center lg:pt-0 pt-8">
                 <Image
                   src="/sobre-nos.png"
                   alt="Motorista e o pet"
@@ -42,7 +42,7 @@ const Guide = () => {
                 />
               </div>
               <div className="lg:w-3/12 text-justify lg:pl-4">
-                <p className="regular-14 pt-16 indent-4">
+                <p className="regular-14 lg:pt-16 pt-8 indent-4">
                   Além do serviço onde levamos o seu pet para onde você precisar
                   com muito cuidado, responsabilidade e amor, acreditamos que o
                   Motorista de Pet <strong>é algo muito maior do que apenas um

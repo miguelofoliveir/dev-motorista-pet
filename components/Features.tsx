@@ -29,7 +29,7 @@ const Features = () => {
           </div>
 
           <div className="lg:flex lg:w-1/3 items-center justify-center">
-            <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-10 lg:gap-0">
+            <ul className="mt-10 grid md:grid-cols-2 lg:mg-10 lg:gap-0">
               {FEATURES.map((feature) => (
                 <FeatureItem
                   key={feature.title}
@@ -40,8 +40,8 @@ const Features = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:w-1/3">
-            <div className="bold-24 lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl w-96">
+          <div className="lg:w-1/3 lg:pt-0 pt-4 lg:pb-0 pb-8">
+            <div className="bold-24 lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
               AGENDAR CORRIDA
             </div>
             <Image
@@ -53,7 +53,7 @@ const Features = () => {
             />
           </div>
         </div>
-        <div className="orange-main-bg lg:px-24 px-4 lg:pt-20 pt-4 lg:pb-20">
+        <div className="orange-main-bg lg:px-24 px-4 lg:pt-20 pt-4 lg:pb-20 pb-8">
           <div>
             <h2 className="bold-24 lg:bold-40 cinzel text-white">
               SAIBA MAIS COMO AGENDAR A SUA CORRIDA
@@ -64,7 +64,7 @@ const Features = () => {
               </li>
             </ul>
           </div>
-          <div className="flex pt-8 text-white">
+          <div className="lg:flex lg:pt-8 pt:pt-6 text-white">
             <div className="lg:w-1/2">
               <div className="pt-4">
                 <details>
@@ -83,7 +83,7 @@ const Features = () => {
                   <summary>
                     <b>2. Qual a área de atuação?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     R: São Paulo, Grande São Paulo, ABC, Intermunicipal e
                     Interestadual
                   </p>
@@ -94,7 +94,7 @@ const Features = () => {
                   <summary>
                     <b>3. A viagem é paga antes ou após a corrida?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     O agendamento só será realizado após o pagamento total da
                     corrida, garantindo assim a data e hora desejada.
                   </p>
@@ -105,7 +105,7 @@ const Features = () => {
                   <summary>
                     <b>4. Como eu pago a viagem do meu pet?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     R: Pix e Cartão de Crédito.
                   </p>
                 </details>
@@ -115,7 +115,7 @@ const Features = () => {
                   <summary>
                     <b>5. Até quantos pets são transportados por vez?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     R: Cachorros: pequenos até 4, médios até 3, grandes até 2 e
                     gigantes apenas 1. <br />
                     Gatos: somente em caixa de transporte, sendo no máximo 4
@@ -131,9 +131,7 @@ const Features = () => {
                   <summary>
                     <b>6. Posso acompanhar meu pet na viagem?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
-                    Sim, com certeza!
-                  </p>
+                  <p className="regular-16  pt-2">Sim, com certeza!</p>
                 </details>
               </div>
               <div className="pt-4">
@@ -141,7 +139,7 @@ const Features = () => {
                   <summary>
                     <b>7. Qual tipo de coleira meu pet deve usar?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Para que seu pet viaje em segurança é fundamental o uso de
                     peitoral.
                   </p>
@@ -152,7 +150,7 @@ const Features = () => {
                   <summary>
                     <b>8. Posso alimentar meu pet antes da viagem?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Recomendamos que não alimente seu pet 1 hora antes da viagem
                     para evitar que ele se sinta mal ou desconfortável durante a
                     viagem.
@@ -164,7 +162,7 @@ const Features = () => {
                   <summary>
                     <b>9. Vocês possuem planos/pacotes?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Sim, entre em contato com a nossa Central para avaliarmos a
                     sua necessidade.
                   </p>
@@ -175,7 +173,7 @@ const Features = () => {
                   <summary>
                     <b>10. Qual horário de funcionamento?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Segunda a Sexta: 07h30 às 19h30 <br />
                     Finais de semana e feriados: 09h30 às 18h30
                   </p>
@@ -186,7 +184,7 @@ const Features = () => {
                   <summary>
                     <b>11. Como cancelar uma corrida?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Até duas horas antes não haverá cobrança e o valor será
                     devolvido.
                     <br />
@@ -203,7 +201,7 @@ const Features = () => {
                   <summary>
                     <b>12. Vocês fazem corrida imediata?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Nossa sugestão é que você busque agendar com 24h de
                     antecedência para garantir seu compromisso. Como nossos
                     motoristas possuem uma agenda diária, eventualmente
@@ -217,7 +215,7 @@ const Features = () => {
                   <summary>
                     <b>13. Se meu pet sujar o carro, irei pagar alguma taxa?</b>
                   </summary>
-                  <p className="regular-16 text-gray-30 pt-2">
+                  <p className="regular-16  pt-2">
                     Em quase todas as situações deste tipo a sujeira fica na
                     própria capa de proteção. Caso haja uma intercorrência onde
                     a sujeira entre em contato com o carpete e/ou bancos e não
@@ -228,7 +226,7 @@ const Features = () => {
               </div>
             </div>
             <div className="lg:w-1/2 lg:p-8 p-4">
-              <div className="flex justify-center item-center">
+              <div className="flex justify-center item-center lg:pt-0 pt-4">
                 <Image
                   src="/cat.jpg"
                   alt="dog"
@@ -255,134 +253,133 @@ const Features = () => {
             </li>
           </ul>
         </div>
-        <div className="flex pt-8">
-          <div className="w-1/12">
+        <div className="flex flex-wrap lg:pt-8 pt-4">
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/felipe-becari.png"
               alt="parceiro Felipe Becari"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
           </div>
-          <div className="w-1/12 ml-4">
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/moovipet.png"
               alt="parceiro Moovipet"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
           </div>
-          <div className="w-1/12 ml-4">
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/bendog.png"
               alt="parceiro Bendog"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
           </div>
-          <div className="w-1/12 ml-4">
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/bercario-das-patinhas.png"
               alt="parceiro Berçario das Patinhas"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
           </div>
-          <div className="w-1/12 ml-4">
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/cachorro-perfeito.png"
               alt="parceiro Cachorro Perfeito"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
-          </div>    
-          <div className="w-1/12 ml-4">
+          </div>
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image
               src="/logos-parceiros/chale-4-patinhas.png"
               alt="parceiro Chalé 4 patinhas"
               width={240}
               height={300}
-              className="w-auto"
+              className="w-full"
             />
-          </div>  
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/estancia-pet.png"
-              alt="parceiro Estância Pet"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div> 
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/fillmore.png"
-              alt="parceiro Fillmore"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div>   
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/flores-gastronomia.png"
-              alt="parceiro Flores Gastronomia"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div> 
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/natural-pet-store.png"
-              alt="parceiro Natural Pet Store"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div>  
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/padaria-pet.png"
-              alt="parceiro Padaria Pet"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div>   
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/tea-party.png"
-              alt="parceiro Tea Party"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div>  
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/the-bull.png"
-              alt="parceiro The Bull"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div> 
-          <div className="w-1/12 ml-4">
-            <Image
-              src="/logos-parceiros/too-dog.png"
-              alt="parceiro Too Dog"
-              width={240}
-              height={300}
-              className="w-auto"
-            />
-          </div>    
-          
+          </div>
+          <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/estancia-pet.png"
+                alt="parceiro Estância Pet"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/fillmore.png"
+                alt="parceiro Fillmore"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/flores-gastronomia.png"
+                alt="parceiro Flores Gastronomia"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/natural-pet-store.png"
+                alt="parceiro Natural Pet Store"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/padaria-pet.png"
+                alt="parceiro Padaria Pet"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/tea-party.png"
+                alt="parceiro Tea Party"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/the-bull.png"
+                alt="parceiro The Bull"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
+            <div className="my-2 mr-2 lg:w-1/6 w-1/4">
+              <Image
+                src="/logos-parceiros/too-dog.png"
+                alt="parceiro Too Dog"
+                width={240}
+                height={300}
+                className="w-full"
+              />
+            </div>
         </div>
       </section>
     </>
@@ -410,9 +407,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
         </div>
         <h2 className="bold-14 capitalize cinzel">{title}</h2>
       </div>
-      <p className="regular-16 mt-5 text-gray-30 lg:mt-[30px] lg:bg-none">
-        {description}
-      </p>
+      <p className="regular-16 mt-5  lg:mt-[30px] lg:bg-none">{description}</p>
     </li>
   );
 };
