@@ -5,12 +5,12 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const leftVariants = {
   hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 2 } },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
 };
 
 const rightVariants = {
   hidden: { x: 100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 2 } },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
 };
 
 const growVariants = {
@@ -18,7 +18,7 @@ const growVariants = {
   visible: {
     scale: 1,
     opacity: 1,
-    transition: { type: "spring", stiffness: 100, damping: 10, duration: 2 },
+    transition: { type: "spring", stiffness: 100, damping: 10, duration: 1 },
   },
 };
 

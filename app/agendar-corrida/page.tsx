@@ -64,12 +64,12 @@ export default function Contato() {
 
   const leftVariants = {
     hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 2 } },
+    visible: { x: 0, opacity: 1, transition: { duration: 1 } },
   };
 
   const rightVariants = {
     hidden: { x: 100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 2 } },
+    visible: { x: 0, opacity: 1, transition: { duration: 1 } },
   };
 
   return (

@@ -37,7 +37,7 @@ const Navbar = () => {
     visible: {
       scale: 1,
       opacity: 1,
-      transition: { type: "spring", stiffness: 100, damping: 10, duration: 2 },
+      transition: { type: "spring", stiffness: 100, damping: 10, duration: 1 },
     },
   };
 
