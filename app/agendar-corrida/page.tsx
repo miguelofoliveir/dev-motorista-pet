@@ -65,10 +65,10 @@ export default function Contato() {
 
   return (
     <section>
-      <div className="lg:px-8 px-4 py-4 lg:pb-32 pb-10 lg:py-20 green-main-bg">
+      <div className="lg:px-8 px-4 py-4 lg:pb-32 pb-10 lg:py-20 green-two-bg">
         <ScrollAnimation variants={leftVariants}>
           <div className="lg:flex pt-4">
-            <div className="lg:w-1/2 w-full lg:mr-12 green-one-bg rounded-lg p-8">
+            <div className="lg:w-1/2 w-full lg:mr-12 green-main-bg rounded-lg p-8">
               <h2 className="bold-24 lg:bold-40 cinzel">
                 AGENDAMENTO DE CORRIDA
               </h2>
@@ -127,7 +127,7 @@ export default function Contato() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bold-16 p-3 green-main-bg text-white rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
+                  className="w-full bold-16 p-3 orange-main-bg text-white rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
                 >
                   Enviar
                 </button>

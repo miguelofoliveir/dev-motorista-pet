@@ -72,6 +72,13 @@ const Navbar = () => {
                     {link.label}
                   </Link>
                 ))}
+                 <Link
+                    href="/agendar-corrida"
+                    key="agendar-corrida"
+                    className="regular-16 p-2 w-52 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                  >
+                    AGENDAR CORRIDA
+                  </Link>
               </ul>
             )}
           </div>

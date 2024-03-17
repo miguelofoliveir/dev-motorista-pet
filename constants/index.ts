@@ -71,8 +71,8 @@ export const FEATURES = [
 export const FOOTER_ONE_LINKS = [
   {
     links: [
-      { label: "SOBRE NÓS", href: "/#sobre-nos" },
-      { label: "SERVIÇOS", href: "/#servicos" },
+      { label: "SOBRE NÓS", href: "./#sobre-nos" },
+      { label: "SERVIÇOS", href: "./#servicos" },
       { label: "QUERO SER MOTORISTA", href: "/quero-ser-motorista" },
       { label: "AGENDAR CORRIDA", href: "/agendar-corrida" },
     ],

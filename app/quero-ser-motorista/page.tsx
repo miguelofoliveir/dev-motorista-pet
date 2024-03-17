@@ -97,7 +97,7 @@ export default function SejaMotorista() {
           </ScrollAnimation>
         </div>
         <ScrollAnimation variants={rightVariants}>
-          <div className="lg:px-8 px-4">
+          <div className="lg:px-8 px-0 lg:pt-0 pt-8">
             <h1 className="bold-24 lg:bold-40 cinzel">
               COMO POSSO SER MOTORISTA DE PET?
             </h1>
@@ -138,7 +138,7 @@ export default function SejaMotorista() {
               * Atestado de Antecedentes Criminais.
             </p>
           </div>
-          <div className="lg:m-8 cinzel">
+          <div className="lg:m-8 cinzel lg:pt-0 pt-4">
           <a href="/quero-ser-motorista#form-quero-ser-motorista">
             <Button
               type="button"
