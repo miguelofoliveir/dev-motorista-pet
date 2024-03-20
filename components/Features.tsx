@@ -308,7 +308,7 @@ const Features = () => {
 
       <section
         id="perguntas-frequentes"
-        className="lg:py-16 py-10 lg:px-24 px-6 green-one-bg"
+        className="relative lg:py-16 py-10 lg:px-24 px-6 green-one-bg"
       >
         <ScrollAnimation variants={leftVariants}>
           <div>
@@ -323,6 +323,7 @@ const Features = () => {
           </div>
         </ScrollAnimation>
         <Carousel images={partnerLogos} />
+    
         {/* <div className="flex flex-wrap lg:pt-8 pt-4">
           <div className="my-2 mr-2 lg:w-1/6 w-1/4">
             <Image

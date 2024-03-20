@@ -24,10 +24,10 @@ const carouselVariants = {
   const transition = {
     x: {
       type: "spring",
-      stiffness: 300,
-      damping: 30,
+      stiffness: 100,
+      damping: 10,
     },
-    opacity: { duration: 0.2 },
+    opacity: { duration: 0.1 },
   };
   
   
@@ -54,7 +54,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     const updateSize = () => {
       const width = window.innerWidth;
       if (width < 640) {
-        setItemsVisible(4); // Para telas pequenas, exiba 4
+        setItemsVisible(3); // Para telas pequenas, exiba 4
       } else {
         setItemsVisible(8); // Para telas maiores, exiba 8
       }
@@ -78,10 +78,10 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   );
 
   return (
-    <div className="relative px-10" style={{ height: '350px' }}>
+    <div className="relative lg:px-10 px-8 lg:h-32 h-14">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
-          className="grid grid-cols-4 lg:grid-cols-8 gap-4"
+          className="grid grid-cols-3 lg:grid-cols-8 gap-4"
           key={page}
           custom={direction}
           variants={carouselVariants}
@@ -111,14 +111,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       <button
         className="absolute left-0 z-30 flex items-center justify-center bg-white text-black rounded-full h-10 w-10 hover:bg-gray-700"
         onClick={() => paginate(-1)}
-        style={{ top: "70%", transform: "translateY(-50%)", marginLeft: "-20px" }}
+        style={{ top: "80%", transform: "translateY(-50%)", marginLeft: "-20px" }}
       >
         &lt;
       </button>
       <button
         className="absolute right-0 z-30 flex items-center justify-center bg-white text-black rounded-full h-10 w-10 hover:bg-gray-700"
         onClick={() => paginate(1)}
-        style={{ top: "70%", transform: "translateY(-50%)", marginRight: "-20px" }}
+        style={{ top: "80%", transform: "translateY(-50%)", marginRight: "-20px" }}
       >
         &gt;
       </button>
