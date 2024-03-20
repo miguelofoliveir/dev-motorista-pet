@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter lg:pb-8 lg:pt-4 pt-0 green-one-bg">
+    <footer className="flexCenter lg:pt-4 pt-0 green-one-bg">
       <div className="flex w-full flex-col">
         <div className="lg:flex lg:py-4 py-6 justify-center md:flex-row lg:px-8 px-4 green-main-bg">
           <div className="flex justify-center lg:w-1/4">
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div />
-        <p className="regular-12 py-3 w-full text-center text-black cinzel green-one-bg lg:px-0 px-8">
+        <p className="regular-12 py-3 w-full text-center text-black cinzel green-main-bg lg:px-0 px-8">
           2024 Motorista de Pet | Todos os direitos reservados CNPJ
           27476875/0001-10
         </p>

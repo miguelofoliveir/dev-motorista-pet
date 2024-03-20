@@ -6,14 +6,6 @@ export const NAV_LINKS = [
   { href: "./quero-ser-motorista", key: "quero_ser_motorista", label: "Quero ser motorista" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
-];
-
 // FEATURES SECTION
 export const FEATURES = [
   {

@@ -70,19 +70,21 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.key}
-                    className="regular-16 p-4 w-full text-gray-50 flex cursor-pointer pb-1.5 transition-all hover:font-bold"
+                    className="regular-16 p-4 w-full text-gray-50 flex cursor-pointer pb-1.5"
                   >
                     {link.label}
                   </Link>
                 ))}
-                <Link
+               <div className="p-4">
+               <Link
                   href="/agendar-corrida"
                   key="agendar-corrida"
-                  className="regular-16 p-4 w-full text-gray-50 flex cursor-pointer pb-1.5 transition-all hover:font-bold"
+                  className="green-main-bg cinzel rounded-lg text-white justify-center px-6 py-3 w-full flex cursor-pointer"
                 >
-                  AGENDAR CORRIDA
+                  agendar corrida
                 </Link>
-                <div className="w-full flex justify-center items-center p-4">
+               </div>
+                <div className="w-full flex justify-center items-center pb-4">
                   <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
                     {SOCIALS.links.map((link) => (
                       <Link className="mt-2" href={link.link} key={link.icon}>
