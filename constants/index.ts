@@ -3,7 +3,7 @@ export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "./#sobre-nos", key: "sobre_nos", label: "Sobre Nós" },
   { href: "./#servicos", key: "servicos", label: "Serviços" },
-  { href: "/quero-ser-motorista", key: "quero_ser_motorista", label: "Quero ser motorista" },
+  { href: "./quero-ser-motorista", key: "quero_ser_motorista", label: "Quero ser motorista" },
 ];
 
 // CAMP SECTION
@@ -58,13 +58,6 @@ export const FEATURES = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
   },
-  {
-    title: "ONDE VOCÊ QUISER",
-    icon: "/location.png",
-    variant: "orange",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt fringilla varius. Nulla facilisi. Pellentesque non ante at justo dapibus pellentesque egestas non dui. Praesent finibus quis nulla vel mattis.",
-  },
 ];
 
 // FOOTER SECTION
@@ -73,8 +66,8 @@ export const FOOTER_ONE_LINKS = [
     links: [
       { label: "SOBRE NÓS", href: "./#sobre-nos" },
       { label: "SERVIÇOS", href: "./#servicos" },
-      { label: "QUERO SER MOTORISTA", href: "/quero-ser-motorista" },
-      { label: "AGENDAR CORRIDA", href: "/agendar-corrida" },
+      { label: "QUERO SER MOTORISTA", href: "./quero-ser-motorista" },
+      { label: "AGENDAR CORRIDA", href: "./agendar-corrida" },
     ],
   },
 ];
@@ -82,8 +75,8 @@ export const FOOTER_ONE_LINKS = [
 export const FOOTER_TWO_LINKS = [
   {
     links: [
-      { label: "TERMO DE USO", href: "/termo-de-uso" },
-      { label: "SERVIÇOS", href: "/politica-de-privacidade" },
+      { label: "SERVIÇOS", href: "./#servicos" },
+      { label: "TERMO DE USO", href: "./termo-de-uso" },
       { label: "COOKIES", href: "/cookies" },
     ],
   },

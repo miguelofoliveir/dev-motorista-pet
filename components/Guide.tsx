@@ -28,11 +28,11 @@ const Guide = () => {
         <ScrollAnimation variants={leftVariants}>
           <div className="lg:pt-0 pt-10">
             <h2 className="bold-24 lg:bold-40 cinzel text-white">
-              MAIS QUE UM TRANSPORTE
+              mais que um transporte
             </h2>
             <ul className="list-disc pl-5">
               <li className="list-item">
-                <h4 className="bold-16 orange-main-color">SOBRE NÓS</h4>
+                <h4 className="bold-16 orange-main-color">sobre nós</h4>
               </li>
             </ul>
           </div>
@@ -41,7 +41,6 @@ const Guide = () => {
           <div>
             <div className="lg:flex lg:pt-0 pt-4">
               <div className="lg:w-3/12 lg:pt-0 pt-0 lg:pr-4">
-                <ScrollAnimation variants={leftVariants}>
                   <p className="regular-14 lg:pt-16 text-justify indent-4">
                     Ao iniciar um trabalho de transporte de pets, sem pretenção
                     alguma, Renato começou a registrar suas viagens mostrando
@@ -60,7 +59,6 @@ const Guide = () => {
                     humanizado desde seu primeiro contato até a conclusão da
                     viagem.
                   </p>
-                </ScrollAnimation>
               </div>
 
               <div className="lg:w-6/12 flex justify-center lg:pt-0 pt-8">
@@ -68,22 +66,19 @@ const Guide = () => {
                   <Image
                     src="/sobre-nos.png"
                     alt="Motorista e o pet"
-                    className="img-motorista rounded-full"
+                    className="img-motorista"
                     width={300}
                     height={29}
                   />
                 </ScrollAnimation>
               </div>
               <div className="lg:w-3/12 text-justify lg:pl-4">
-                <ScrollAnimation variants={rightVariants}>
                   <p className="regular-14 lg:pt-16 pt-8 indent-4">
                     Além do serviço onde levamos o seu pet para onde você
                     precisar com muito cuidado, responsabilidade e amor,
-                    acreditamos que o Motorista de Pet{" "}
-                    <strong>
-                      é algo muito maior do que apenas um transporte
-                    </strong>{" "}
-                    pois reflete o amor que todos os envolvidos sentem pelos
+                    acreditamos que o Motorista de Pet
+                    <strong> é algo muito maior do que apenas um transporte
+                    </strong> pois reflete o amor que todos os envolvidos sentem pelos
                     animais e queremos mostrar isso para o mundo de diferentes
                     formas.
                   </p>
@@ -93,10 +88,9 @@ const Guide = () => {
                     responsáveis e simpáticos.
                   </p>
                   <p className="regular-14 pt-4 indent-4">
-                    E o nosso maior valor é:{" "}
-                    <strong>cuidamos do seu pet como você cuida!</strong>
+                    E o nosso maior valor é:
+                    <strong> cuidamos do seu pet como você cuida!</strong>
                   </p>
-                </ScrollAnimation>
               </div>
             </div>
           </div>

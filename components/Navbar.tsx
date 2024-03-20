@@ -37,7 +37,12 @@ const Navbar = () => {
     visible: {
       scale: 1,
       opacity: 1,
-      transition: { type: "spring", stiffness: 100, damping: 10, duration: 1 },
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+        duration: 0.5,
+      },
     },
   };
 
@@ -49,15 +54,13 @@ const Navbar = () => {
       <div className="flex justify-center py-4 border-b">
         <div className="lg:w-4/12 w-10/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
-            <ScrollAnimation variants={growVariants}>
-              <Image
-                src="menu.svg"
-                alt="menu"
-                width={28}
-                height={28}
-                className="inline-block cursor-pointer lg:hidden"
-              />
-            </ScrollAnimation>
+            <Image
+              src="menu.svg"
+              alt="menu"
+              width={28}
+              height={28}
+              className="inline-block cursor-pointer lg:hidden"
+            />
             {isMenuVisible && (
               <ul
                 ref={menuRef}
@@ -83,14 +86,12 @@ const Navbar = () => {
                   <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
                     {SOCIALS.links.map((link) => (
                       <Link className="mt-2" href={link.link} key={link.icon}>
-                        <ScrollAnimation variants={growVariants}>
-                          <Image
-                            src={link.icon}
-                            alt="logo"
-                            width={24}
-                            height={24}
-                          />
-                        </ScrollAnimation>
+                        <Image
+                          src={link.icon}
+                          alt="logo"
+                          width={24}
+                          height={24}
+                        />
                       </Link>
                     ))}
                   </ul>
@@ -101,23 +102,19 @@ const Navbar = () => {
         </div>
         <div className="lg:w-4/12 w-2/12 flex justify-center lg:mr-0 mr-8">
           <Link href="/">
-            <ScrollAnimation variants={growVariants}>
-              <Image
-                src="/logo-pet-trim.png"
-                alt="logo motorista de pet"
-                width={104}
-                height={59}
-              />
-            </ScrollAnimation>
+            <Image
+              src="/logo-pet-trim.png"
+              alt="logo motorista de pet"
+              width={104}
+              height={59}
+            />
           </Link>
         </div>
         <div className="lg:w-4/12 lg:flex hidden justify-end items-center lg:pr-8 pr-4">
           <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
-                <ScrollAnimation variants={growVariants}>
-                  <Image src={link.icon} alt="logo" width={24} height={24} />
-                </ScrollAnimation>
+                <Image src={link.icon} alt="logo" width={24} height={24} />
               </Link>
             ))}
           </ul>
