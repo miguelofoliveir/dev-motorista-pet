@@ -47,7 +47,7 @@ const Navbar = () => {
         Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
       <div className="flex justify-center py-4 border-b">
-        <div className="w-10/12 pt-4 px-6">
+        <div className="lg:w-4/12 w-10/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
             <ScrollAnimation variants={growVariants}>
               <Image
