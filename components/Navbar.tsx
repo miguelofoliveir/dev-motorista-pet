@@ -75,17 +75,17 @@ const Navbar = () => {
                     {link.label}
                   </Link>
                 ))}
-               <div className="p-4">
-               <Link
-                  href="/agendar-corrida"
-                  key="agendar-corrida"
-                  className="green-main-bg cinzel rounded-lg text-white justify-center px-6 py-3 w-full flex cursor-pointer"
-                >
-                  agendar corrida
-                </Link>
-               </div>
+                <div className="p-4">
+                  <Link
+                    href="/agendar-corrida"
+                    key="agendar-corrida"
+                    className="green-main-bg cinzel rounded-lg text-white justify-center px-6 py-3 w-full flex cursor-pointer"
+                  >
+                    agendar corrida
+                  </Link>
+                </div>
                 <div className="w-full flex justify-center items-center pb-4">
-                  <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
+                  <ul className="regular-14 flex items-center gap-4 text-gray-30 cinzel">
                     {SOCIALS.links.map((link) => (
                       <Link className="mt-2" href={link.link} key={link.icon}>
                         <Image
@@ -96,6 +96,18 @@ const Navbar = () => {
                         />
                       </Link>
                     ))}
+                    <Link
+                      className="mt-2 ml-2"
+                      href="https://www.linkedin.com/company/motorista-de-pet"
+                      key="linkedin"
+                    >
+                      <Image
+                        src="/linkedin.png"
+                        alt="logo linkedin"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   </ul>
                 </div>
               </ul>
@@ -113,12 +125,24 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="lg:w-4/12 lg:flex hidden justify-end items-center lg:pr-8 pr-4">
-          <ul className="regular-14 flex gap-4 text-gray-30 cinzel">
+          <ul className="regular-14 flex items-center gap-4 text-gray-30 cinzel">
             {SOCIALS.links.map((link) => (
               <Link className="mt-2" href={link.link} key={link.icon}>
                 <Image src={link.icon} alt="logo" width={24} height={24} />
               </Link>
             ))}
+            <Link
+              className="mt-2 ml-2"
+              href="https://www.linkedin.com/company/motorista-de-pet"
+              key="linkedin"
+            >
+              <Image
+                src="/linkedin.png"
+                alt="logo linkedin"
+                width={20}
+                height={20}
+              />
+            </Link>
           </ul>
         </div>
       </div>
