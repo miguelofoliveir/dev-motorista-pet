@@ -8,15 +8,27 @@ const Footer = () => {
     <footer className="flexCenter lg:pt-4 pt-0 green-one-bg">
       <div className="flex w-full flex-col">
         <div className="lg:flex lg:py-4 py-6 justify-center md:flex-row lg:px-8 px-4 green-main-bg">
-          <div className="flex justify-center lg:w-1/4">
-            <Link href="/" className="lg:mb-10 mb-6">
-              <Image
-                src="logo-pet-trim.png"
-                alt="logo Motorista de Pet"
-                width={84}
-                height={39}
-              />
-            </Link>
+          <div className="lg:w-1/4">
+            <div className="flex justify-center">
+              <Link href="/" className="mb-4">
+                <Image
+                  src="logo-pet-trim.png"
+                  alt="logo Motorista de Pet"
+                  width={84}
+                  height={39}
+                />
+              </Link>
+            </div>
+            <div className="flex justify-center mb-4 regular-14">
+              <Link href="mailto:contato@motoristapet.com.br">
+                contato@motoristapet.com.br
+              </Link>
+            </div>
+            <div className="flex justify-center mb-4 regular-14">
+              <Link href="mailto:marketing@motoristapet.com.br">
+                marketing@motoristapet.com.br
+              </Link>
+            </div>
           </div>
           <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
             {FOOTER_ONE_LINKS.map((columns, index) => (

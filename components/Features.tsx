@@ -91,16 +91,14 @@ const Features = () => {
                 <FeatureItem
                   key={feature.title}
                   title={feature.title}
-                  icon={feature.icon}
-                  description={""}
                 />
               ))}
             </ul>
           </div>
           <div className="lg:w-1/3 lg:pt-0 pt-4 lg:pb-0 pb-8">
             <ScrollAnimation variants={rightVariants}>
-              <div className="bold-24 lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
-                AGENDAR CORRIDA
+              <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
+                <a href="./agendar-corrida">agendar corrida</a>
               </div>
             </ScrollAnimation>
             <ScrollAnimation variants={growVariants}>
@@ -109,7 +107,7 @@ const Features = () => {
                 alt="celular"
                 width={240}
                 height={300}
-                className="w-9/12"
+                className="w-7/12"
               />
             </ScrollAnimation>
           </div>
@@ -459,28 +457,23 @@ const Features = () => {
 
 type FeatureItem = {
   title: string;
-  icon: string;
-  description: string;
 };
 
-const FeatureItem = ({ title, icon, description }: FeatureItem) => {
+const FeatureItem = ({ title }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
-      <div className="flex items-center">
-        <div className="rounded-full p-4 lg:p-4 mr-4 green-main-bg">
-          <ScrollAnimation variants={growVariants}>
+      <div className="flex items-center mr-4 mt-6">
+        <div className="px-2">
             <Image
-              src={icon}
-              alt="map"
-              width={25}
-              height={20}
-              className="w-6 h-6"
+             src="/ic-servico.png"
+              alt="icone de servicos"
+              width={50}
+              height={50}
+              className="w-10 h-10"
             />
-          </ScrollAnimation>
         </div>
         <h2 className="bold-14 capitalize cinzel">{title}</h2>
       </div>
-      <p className="regular-16 mt-5  lg:mt-[30px] lg:bg-none">{description}</p>
     </li>
   );
 };

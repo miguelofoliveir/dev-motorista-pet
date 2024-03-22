@@ -155,23 +155,6 @@ export default function Contato() {
                 </button>
               </form>
             </div>
-            <div className="lg:w-1/2 w-full lg:mt-0 mt-8">
-              <div className="rounded-lg green-one-bg h-auto regular-14 p-4">
-                <p className="bold-16">
-                  ENTRE EM CONTATO CONOSCO PARA SUGESTÕES, DÚVIDAS OU PARCERIAS
-                </p>
-                <p>
-                  <a href="mailto:contato@motoristapet.com.br">
-                    contato@motoristapet.com.br
-                  </a>
-                </p>
-                <p>
-                  <a href="mailto:marketing@motoristapet.com.br">
-                    marketing@motoristapet.com.br
-                  </a>
-                </p>
-              </div>
-            </div>
           </div>
         </ScrollAnimation>
       </div>

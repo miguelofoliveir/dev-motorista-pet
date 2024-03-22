@@ -56,10 +56,9 @@ export const FEATURES = [
 export const FOOTER_ONE_LINKS = [
   {
     links: [
-      { label: "SOBRE NÓS", href: "./#sobre-nos" },
-      { label: "SERVIÇOS", href: "./#servicos" },
-      { label: "QUERO SER MOTORISTA", href: "./quero-ser-motorista" },
-      { label: "AGENDAR CORRIDA", href: "./agendar-corrida" },
+      { label: "sobre nós", href: "./#sobre-nos" },
+      { label: "quero ser motorista", href: "./quero-ser-motorista" },
+      { label: "agendar corrida", href: "./agendar-corrida" },
     ],
   },
 ];
@@ -67,9 +66,9 @@ export const FOOTER_ONE_LINKS = [
 export const FOOTER_TWO_LINKS = [
   {
     links: [
-      { label: "SERVIÇOS", href: "./#servicos" },
-      { label: "TERMO DE USO", href: "./termo-de-uso" },
-      { label: "COOKIES", href: "/cookies" },
+      { label: "serviços", href: "./#servicos" },
+      { label: "termo de uso", href: "./termo-de-uso" },
+      { label: "cookies", href: "/cookies" },
     ],
   },
 ];
