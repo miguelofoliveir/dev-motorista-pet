@@ -48,19 +48,13 @@ const validationSchema = yup.object().shape({
     .string()
     .email("Digite um e-mail válido.")
     .required("O campo e-mail é obrigatório."),
-  celular: yup
-    .string()
-    .required("O campo celular é obrigatório."),
-  cep: yup
-    .string()
-    .required("O campo CEP é obrigatório."),
+  celular: yup.string().required("O campo celular é obrigatório."),
+  cep: yup.string().required("O campo CEP é obrigatório."),
   numero: yup.string().required("O campo número é obrigatório."),
   transportePet: yup
     .string()
     .required("Informe se já trabalha com transporte de pet."),
-  anoCarro: yup
-    .string()
-    .required("O ano do carro é obrigatório."),
+  anoCarro: yup.string().required("O ano do carro é obrigatório."),
 });
 
 export default function SejaMotorista() {
@@ -82,7 +76,7 @@ export default function SejaMotorista() {
 
     try {
       await validationSchema.validate(formData, { abortEarly: false });
-      setErrors({}); 
+      setErrors({});
       enviarParaWhatsApp(formData);
     } catch (error) {
       if (error instanceof yup.ValidationError) {
@@ -159,22 +153,18 @@ export default function SejaMotorista() {
     <section className="green-one-bg">
       <div className="lg:flex py-4 lg:pb-32 pb-10 lg:py-20 lg:px-8 px-4">
         <div className="lg:pt-0 pt-8 lg:block hidden lg:w-1/4">
-          <ScrollAnimation variants={growVariants}>
-            <Image
-              src="/motorista-pet-redondo.png"
-              alt="Motorista e o pet"
-              className="w-full rounded-lg"
-              width={300}
-              height={29}
-            />
-          </ScrollAnimation>
+          <Image
+            src="/motorista-pet-redondo.png"
+            alt="Motorista e o pet"
+            className="w-full rounded-lg"
+            width={300}
+            height={29}
+          />
         </div>
         <div className="lg:px-8 px-0 lg:pt-0 pt-8">
-          <ScrollAnimation variants={rightVariants}>
-            <h1 className="bold-24 lg:bold-40 cinzel">
-              COMO POSSO SER MOTORISTA DE PET?
-            </h1>
-          </ScrollAnimation>
+          <h1 className="bold-24 lg:bold-40 cinzel">
+            COMO POSSO SER MOTORISTA DE PET?
+          </h1>
           <p className="regular-14 lg:pt-4 text-justify pt-4">
             É fundamental que você goste MUITO de pets; <br />
             Trabalhamos com transporte humanizado, o pet deverá obrigatoriamente

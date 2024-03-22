@@ -96,12 +96,9 @@ const Features = () => {
             </ul>
           </div>
           <div className="lg:w-1/3 lg:pt-0 pt-4 lg:pb-0 pb-8">
-            <ScrollAnimation variants={rightVariants}>
               <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
                 <a href="./agendar-corrida">agendar corrida</a>
               </div>
-            </ScrollAnimation>
-            <ScrollAnimation variants={growVariants}>
               <Image
                 src="/celular.png"
                 alt="celular"
@@ -109,10 +106,8 @@ const Features = () => {
                 height={300}
                 className="w-7/12"
               />
-            </ScrollAnimation>
           </div>
         </div>
-
         <div className="orange-main-bg lg:px-24 px-6 lg:pt-20 pt-10 lg:pb-20 pb-8">
           <ScrollAnimation variants={leftVariants}>
             <div>
@@ -191,15 +186,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>6. Posso acompanhar meu pet na viagem?</b>
-                  </summary>
-                  <p className="regular-16  pt-2">Sim, com certeza!</p>
-                </details>
-              </div>
-              <div className="pt-4">
-                <details>
-                  <summary className="cursor-pointer">
-                    <b>7. Qual tipo de coleira meu pet deve usar?</b>
+                    <b>6. Qual tipo de coleira meu pet deve usar?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Para que seu pet viaje em segurança é fundamental o uso de
@@ -210,7 +197,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>8. Posso alimentar meu pet antes da viagem?</b>
+                    <b>7. Posso alimentar meu pet antes da viagem?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Recomendamos que não alimente seu pet 1 hora antes da viagem
@@ -222,7 +209,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>9. Vocês possuem planos/pacotes?</b>
+                    <b>8. Vocês possuem planos/pacotes?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Sim, entre em contato com a nossa Central para avaliarmos a
@@ -233,7 +220,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>10. Qual horário de funcionamento?</b>
+                    <b>9. Qual horário de funcionamento?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Segunda a Sexta: 07h30 às 19h30 <br />
@@ -244,7 +231,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>11. Como cancelar uma corrida?</b>
+                    <b>10. Como cancelar uma corrida?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Até duas horas antes não haverá cobrança e o valor será
@@ -261,7 +248,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>12. Vocês fazem corrida imediata?</b>
+                    <b>11. Vocês fazem corrida imediata?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Nossa sugestão é que você busque agendar com 24h de
@@ -275,7 +262,7 @@ const Features = () => {
               <div className="pt-4">
                 <details>
                   <summary className="cursor-pointer">
-                    <b>13. Se meu pet sujar o carro, irei pagar alguma taxa?</b>
+                    <b>12. Se meu pet sujar o carro, irei pagar alguma taxa?</b>
                   </summary>
                   <p className="regular-16  pt-2">
                     Em quase todas as situações deste tipo a sujeira fica na

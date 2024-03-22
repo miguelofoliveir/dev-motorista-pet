@@ -5,9 +5,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter lg:pt-4 pt-0 green-one-bg">
+    <footer className="flexCenter lg:pt-4 pt-0 green-main-bg">
       <div className="flex w-full flex-col">
-        <div className="lg:flex lg:py-4 py-6 justify-center md:flex-row lg:px-8 px-4 green-main-bg">
+        <div className="lg:flex lg:py-4 py-6 justify-center md:flex-row lg:px-8 px-4">
           <div className="lg:w-1/4">
             <div className="flex justify-center">
               <Link href="/" className="mb-4">
