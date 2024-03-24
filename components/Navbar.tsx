@@ -64,7 +64,7 @@ const Navbar = () => {
             {isMenuVisible && (
               <ul
                 ref={menuRef}
-                className="h-auto lg:hidden cinzel absolute w-72 top-full rounded-lg bg-white z-50"
+                className="h-auto lg:hidden cinzel absolute w-72 top-10 rounded-lg bg-white z-50"
               >
                 {NAV_LINKS.map((link) => (
                   <Link
@@ -87,7 +87,7 @@ const Navbar = () => {
                 <div className="w-full flex justify-center items-center pb-4">
                   <ul className="regular-14 flex items-center gap-4 text-gray-30 cinzel">
                     {SOCIALS.links.map((link) => (
-                      <Link className="mt-2" href={link.link} key={link.icon}>
+                      <Link className="mt-2" href={link.link} key={link.icon} target="_blank">
                         <Image
                           src={link.icon}
                           alt="logo"

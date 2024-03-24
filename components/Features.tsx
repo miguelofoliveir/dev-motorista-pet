@@ -66,7 +66,7 @@ const Features = () => {
       <section id="servicos" className="green-two-bg lg:pt-20 pt-10">
         <ScrollAnimation variants={leftVariants}>
           <div className="lg:px-24 px-6">
-            <h2 className="bold-24 lg:bold-40 cinzel orange-main-color">
+            <h2 className="bold-24 lg:bold-40 cinzel orange-main-color lg:leading-normal leading-none">
               levamos seu pet aonde você quiser!
             </h2>
 
@@ -97,17 +97,19 @@ const Features = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:w-1/3 lg:pt-0 pt-4 lg:pb-0 pb-8">
+          <div className="lg:w-1/3 lg:pt-0 pt-14 lg:pb-0 pb-8">
             <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
               <a href="./agendar-corrida">agendar corrida</a>
             </div>
-            <Image
+           <div className="lg:flex justify-center mt-4 pr-8">
+           <Image
               src="/celular.png"
               alt="celular"
               width={240}
               height={300}
-              className="w-7/12"
+              className="lg:w-7/12 w-8/12"
             />
+           </div>
           </div>
         </div>
         <div className="orange-main-bg lg:px-24 px-6 lg:pt-20 pt-10 lg:pb-20 pb-8">
@@ -331,7 +333,7 @@ const FeatureItem = ({ title }: FeatureItem) => {
             className="w-10 h-10"
           />
         </div>
-        <h2 className="bold-14 capitalize cinzel">{title}</h2>
+        <h2 className="bold-14 capitalize cinzel lg:ml-0 ml-2">{title}</h2>
       </div>
     </li>
   );

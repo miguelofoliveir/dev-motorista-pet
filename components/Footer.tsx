@@ -19,12 +19,12 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="flex justify-center mb-4 regular-14">
+            <div className="lg:flex hidden justify-center mb-4 regular-14">
               <Link href="mailto:contato@motoristapet.com.br">
                 contato@motoristapet.com.br
               </Link>
             </div>
-            <div className="flex justify-center mb-4 regular-14">
+            <div className="lg:flex hidden justify-center mb-4 regular-14">
               <Link href="mailto:marketing@motoristapet.com.br">
                 marketing@motoristapet.com.br
               </Link>
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="flex justify-center lg:text-left text-center lg:w-1/4 md:flex-1 cinzel">
             {FOOTER_ONE_LINKS.map((columns, index) => (
               <FooterColumn key={`footer-one-column-${index}`} title="">
-                <ul className="lg:regular-16 regular-14 flex flex-col gap-4 text-black">
+                <ul className="lg:regular-16 regular-14 flex flex-col lg:gap-4 gap-2 text-black">
                   {columns.links.map((link) => (
                     <Link href={link.href} key={link.label}>
                       {link.label}
@@ -43,10 +43,10 @@ const Footer = () => {
               </FooterColumn>
             ))}
           </div>
-          <div className="flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-4 cinzel">
+          <div className="lg:flex justify-center lg:text-left text-center lg:w-1/4 lg:mt-0 mt-2 cinzel">
             {FOOTER_TWO_LINKS.map((columns, index) => (
               <FooterColumn key={`footer-two-column-${index}`} title="">
-                <ul className="lg:regular-16 regular-14 flex flex-col gap-4 text-black">
+                <ul className="lg:regular-16 regular-14 flex flex-col lg:gap-4 gap-2 text-black">
                   {columns.links.map((link) => (
                     <Link href={link.href} key={link.label}>
                       {link.label}
@@ -55,11 +55,24 @@ const Footer = () => {
                 </ul>
               </FooterColumn>
             ))}
-          </div>
+             </div>
+            <div className="lg:hidden block text-center mt-4">
+              <div>
+                <Link className="mb-4 regular-14" href="mailto:contato@motoristapet.com.br">
+                  contato@motoristapet.com.br
+                </Link>
+              </div>
+              <div className="regular-14">
+                <Link href="mailto:marketing@motoristapet.com.br">
+                  marketing@motoristapet.com.br
+                </Link>
+              </div>
+            </div>
+         
         </div>
 
         <div />
-        <p className="regular-12 py-3 w-full text-center text-black cinzel green-main-bg lg:px-0 px-8">
+        <p className="regular-12 py-3 w-full text-center text-black cinzel lg:green-main-bg green-two-bg lg:px-0 px-8">
           2024 Motorista de Pet | Todos os direitos reservados CNPJ
           27476875/0001-10
         </p>
