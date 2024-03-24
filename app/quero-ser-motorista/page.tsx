@@ -214,7 +214,7 @@ export default function SejaMotorista() {
       </div>
       <div
         id="form-quero-ser-motorista"
-        className="lg:flex py-10 green-two-bg lg:px-8 px-4"
+        className="lg:flex justify-center py-10 green-two-bg lg:px-8 px-4"
       >
         <div className="lg:w-1/3 w-full lg:pr-12">
           <form onSubmit={handleSubmit} className="space-y-4">
