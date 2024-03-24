@@ -271,13 +271,13 @@ html {
   }
 
   :root .swiper-button-next:after {
-    top: 5px;
+    top: 0px;
     font-size: 32px;
     right: -15px;
   }
 
   :root .swiper-button-prev:after {
-    top: 5px;
+    top: 0px;
     font-size: 32px;
     left: -15px;
   }
@@ -287,7 +287,7 @@ html {
   }
 
   :root .swiper {
-    height: 120px;
+    height: 125px;
     padding: 25px;
   }
 }
