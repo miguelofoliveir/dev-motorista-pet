@@ -97,7 +97,7 @@ const Features = () => {
             <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
               <a href="./agendar-corrida">agendar corrida</a>
             </div>
-            <div className="flex lg:justify-start justify-center mt-4 pr-8">
+            <div className="flex justify-center mt-4 pr-8">
               <Image
                 src="/celular.png"
                 alt="celular"
