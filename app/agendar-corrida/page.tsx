@@ -133,10 +133,10 @@ export default function Contato() {
   return (
     <section>
       <div className="lg:px-8 px-4 py-4 lg:pb-32 pb-10 lg:py-20 green-two-bg">
-          <div className="lg:flex pt-4">
+          <div className="lg:flex justify-center pt-4">
             <div className="lg:w-1/2 w-full lg:mr-12 green-main-bg rounded-lg p-8">
               <h2 className="bold-24 lg:bold-40 cinzel">
-                AGENDAMENTO DE CORRIDA
+                agendamento de corrida
               </h2>
               <form onSubmit={handleSubmit} className="space-y-4 regular-14">
                 <div className="flex flex-col">
