@@ -115,10 +115,10 @@ const Features = () => {
         <div className="orange-main-bg lg:px-24 px-6 lg:pt-20 pt-10 lg:pb-20 pb-8">
           <ScrollAnimation variants={leftVariants}>
             <div>
-              <h2 className="bold-24 lg:bold-40 cinzel text-white lg:leading-normal leading-none">
+              <h2 className="bold-24 lg:bold-40 cinzel text-black lg:leading-normal leading-none">
                 saiba mais como agendar a sua corrida
               </h2>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc pl-5 text-white">
                 <li className="list-item">
                   <h4 className="bold-16">perguntas frequêntes</h4>
                 </li>
