@@ -7,8 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
-
-
 const partnerLogos = [
   { src: "/logos-parceiros/felipe-becari.png", alt: "parceiro Felipe Becari" },
   { src: "/logos-parceiros/moovipet.png", alt: "parceiro Moovipet" },
@@ -79,15 +77,13 @@ const Features = () => {
         </ScrollAnimation>
         <div className="padding-container relative w-full lg:flex justify-end lg:px-24 px-4">
           <div className="lg:w-1/3">
-            <ScrollAnimation variants={growVariants}>
-              <Image
-                src="/servicos.png"
-                alt="cachorro e gato"
-                width={240}
-                height={300}
-                className="w-full"
-              />
-            </ScrollAnimation>
+            <Image
+              src="/servicos.png"
+              alt="cachorro e gato"
+              width={240}
+              height={300}
+              className="w-full"
+            />
           </div>
 
           <div className="lg:flex lg:w-1/3 items-center justify-center">
@@ -101,15 +97,15 @@ const Features = () => {
             <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
               <a href="./agendar-corrida">agendar corrida</a>
             </div>
-           <div className="lg:flex justify-center mt-4 pr-8">
-           <Image
-              src="/celular.png"
-              alt="celular"
-              width={240}
-              height={300}
-              className="lg:w-7/12 w-8/12"
-            />
-           </div>
+            <div className="lg:flex justify-center mt-4 pr-8">
+              <Image
+                src="/celular.png"
+                alt="celular"
+                width={240}
+                height={300}
+                className="lg:w-7/12 w-8/12"
+              />
+            </div>
           </div>
         </div>
         <div className="orange-main-bg lg:px-24 px-6 lg:pt-20 pt-10 lg:pb-20 pb-8">
@@ -310,7 +306,7 @@ const Features = () => {
             </ul>
           </div>
         </ScrollAnimation>
-        <Carousel images={partnerLogos} /> 
+        <Carousel images={partnerLogos} />
       </section>
     </>
   );

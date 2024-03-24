@@ -13,6 +13,7 @@ interface FormData {
   email: string;
   celular: string;
   cep: string;
+  endereco:string;
   numero: string;
   transportePet: string;
   anoCarro: string;
@@ -50,6 +51,7 @@ const validationSchema = yup.object().shape({
     .required("O campo e-mail é obrigatório."),
   celular: yup.string().required("O campo celular é obrigatório."),
   cep: yup.string().required("O campo CEP é obrigatório."),
+  endereco:yup.string().required("O campo Endereço é obrigatório."),
   numero: yup.string().required("O campo número é obrigatório."),
   transportePet: yup
     .string()
@@ -64,6 +66,7 @@ export default function SejaMotorista() {
     email: "",
     celular: "",
     cep: "",
+    endereco:"",
     numero: "",
     transportePet: "",
     anoCarro: "",
@@ -130,7 +133,7 @@ export default function SejaMotorista() {
   };
 
   function enviarParaWhatsApp(formData: FormData) {
-    const mensagem = `Olá, aqui estão os dados do formulário de Quero ser Motorista:\nNome: ${formData.nome} ${formData.sobrenome}\nE-mail: ${formData.email}\nCelular: ${formData.celular}\nCEP: ${formData.cep}\nNúmero: ${formData.numero}\nJá trabalha com transporte de pet? ${formData.transportePet}\nAno do carro: ${formData.anoCarro}`;
+    const mensagem = `Olá, aqui estão os dados do formulário de Quero ser Motorista:\nNome: ${formData.nome} ${formData.sobrenome}\nE-mail: ${formData.email}\nCelular: ${formData.celular}\nCEP: ${formData.cep}\nEndereço: ${formData.endereco}\nNúmero: ${formData.numero}\nJá trabalha com transporte de pet? ${formData.transportePet}\nAno do carro: ${formData.anoCarro}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
@@ -324,8 +327,29 @@ export default function SejaMotorista() {
               )}
             </div>
             <div className="flex flex-col">
+              <label htmlFor="endereco" className="mb-2">
+                Endereço:
+              </label>
+              <input
+                type="text"
+                name="endereco"
+                id="endereco"
+                placeholder="Endereço"
+                value={formData.endereco}
+                onChange={handleChange}
+                className={`w-full p-2 border rounded-md shadow-sm focus:outline-none ${
+                  errors.endereco
+                    ? "border-red-500"
+                    : "border-gray-300 focus-visible:border-teal-500"
+                }`}
+              />
+              {errors.endereco && (
+                <p className="text-red-500 text-sm mt-1">{errors.endereco}</p>
+              )}
+            </div>
+            <div className="flex flex-col">
               <label htmlFor="numero" className="mb-2">
-                Número:
+                Número e Complemento:
               </label>
               <input
                 type="text"
