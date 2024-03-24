@@ -19,7 +19,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="lg:flex hidden justify-center mb-4 regular-14">
+            <div className="lg:flex hidden justify-center regular-14">
               <Link href="mailto:contato@motoristapet.com.br">
                 contato@motoristapet.com.br
               </Link>
