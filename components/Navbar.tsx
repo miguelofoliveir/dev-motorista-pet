@@ -10,8 +10,9 @@ const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null); // Ref para o elemento do menu
 
-  // Função para alternar a visibilidade
-  const toggleMenu = () => {
+  const toggleMenu = (event: React.MouseEvent<HTMLDivElement>) => {
+    // Prevenindo a propagação do evento
+    event.stopPropagation();
     setIsMenuVisible(!isMenuVisible);
   };
 
