@@ -46,6 +46,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
               alt={image.alt}
               width={240}
               height={300}
+              className='lg:w-44 w-20'
               layout="responsive"
               objectFit="contain"
             />

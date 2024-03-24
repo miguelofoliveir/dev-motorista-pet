@@ -247,6 +247,10 @@ html {
   color: #64bcba;
 }
 
+:root .swiper {
+  height: 220px;
+}
+
 :root .swiper-pagination-bullet-active {
   background-color: #64bcba;
 }
@@ -260,14 +264,20 @@ html {
   :root .swiper-button-next:after {
     top: -10px;
     font-size: 32px;
+    right: -15px;
   }
 
   :root .swiper-button-prev:after {
     top: -10px;
     font-size: 32px;
+    left: -15px;
   }
 
   :root .swiper-pagination-bullets {
-    bottom: 0px!important;
+    bottom: 0px !important;
+  }
+
+  :root .swiper {
+    height: 120px;
   }
 }

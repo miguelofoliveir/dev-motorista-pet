@@ -97,7 +97,7 @@ const Features = () => {
             <div className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96">
               <a href="./agendar-corrida">agendar corrida</a>
             </div>
-            <div className="lg:flex justify-center mt-4 pr-8">
+            <div className="flex lg:justify-start justify-center mt-4 pr-8">
               <Image
                 src="/celular.png"
                 alt="celular"
@@ -125,7 +125,7 @@ const Features = () => {
             <div className="lg:w-1/2">
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>1. Como eu agendo uma corrida?</b>
                   </summary>
                   <p className="regular-16 pt-2">
@@ -137,7 +137,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>2. Qual a área de atuação?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -148,7 +148,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>3. A viagem é paga antes ou após a corrida?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -159,7 +159,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>4. Como eu pago a viagem do meu pet?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -169,7 +169,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>5. Até quantos pets são transportados por vez?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -185,7 +185,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>6. Qual tipo de coleira meu pet deve usar?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -196,7 +196,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>7. Posso alimentar meu pet antes da viagem?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -208,7 +208,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>8. Vocês possuem planos/pacotes?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -219,7 +219,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>9. Qual horário de funcionamento?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -230,7 +230,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>10. Como cancelar uma corrida?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -247,7 +247,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>11. Vocês fazem corrida imediata?</b>
                   </summary>
                   <p className="regular-16  pt-2">
@@ -261,7 +261,7 @@ const Features = () => {
               </div>
               <div className="pt-4">
                 <details>
-                  <summary className="cursor-pointer">
+                  <summary className="cursor-pointer text-black">
                     <b>12. Se meu pet sujar o carro, irei pagar alguma taxa?</b>
                   </summary>
                   <p className="regular-16  pt-2">
