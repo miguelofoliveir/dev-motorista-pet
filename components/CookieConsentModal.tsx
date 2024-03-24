@@ -25,7 +25,7 @@ const CookieConsentModal = () => {
 
   return (
     <div className='fixed bottom-0 w-full bg-white p-4 z-50 text-center lg:flex justify-center items-center'>
-      <p className='cinzel lg:text-sm text-xs'>Este site utiliza cookies para garantir que você tenha a melhor experiência. <a href="/cookies">Leia nossa política de cookies.</a></p>
+      <p className='cinzel lg:text-sm text-xs'>Este site utiliza cookies para garantir que você tenha a melhor experiência. <a href="./termo-cookies">Leia nossa política de cookies.</a></p>
       <button className='green-main-bg text-white cinzel rounded-full bold-14 px-4 py-2 lg:ml-4 lg:mt-0 mt-2' onClick={acceptCookies}>Aceitar</button>
     </div>
   );

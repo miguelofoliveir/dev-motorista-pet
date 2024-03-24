@@ -67,8 +67,8 @@ export const FOOTER_TWO_LINKS = [
   {
     links: [
       { label: "serviços", href: "./#servicos" },
-      { label: "termo de uso", href: "./termo-de-uso" },
-      { label: "cookies", href: "/cookies" },
+      { label: "termo de privacidade", href: "./termo-privacidade" },
+      { label: "cookies", href: "./termo-cookies" },
     ],
   },
 ];
