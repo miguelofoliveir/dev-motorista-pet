@@ -248,11 +248,20 @@ html {
 }
 
 :root .swiper {
-  height: 220px;
+  height: 205px;
+  padding: 0px 28px;
 }
 
 :root .swiper-pagination-bullet-active {
   background-color: #64bcba;
+}
+
+:root .swiper-button-next:after {
+  right: -12px;
+}
+
+:root .swiper-button-prev:after {
+  left: -12px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -262,13 +271,13 @@ html {
   }
 
   :root .swiper-button-next:after {
-    top: -10px;
+    top: 5px;
     font-size: 32px;
     right: -15px;
   }
 
   :root .swiper-button-prev:after {
-    top: -10px;
+    top: 5px;
     font-size: 32px;
     left: -15px;
   }
@@ -279,5 +288,6 @@ html {
 
   :root .swiper {
     height: 120px;
+    padding: 25px;
   }
 }
