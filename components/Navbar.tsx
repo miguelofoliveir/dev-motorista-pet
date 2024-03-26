@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="flex lg:regular-16 regular-14 justify-center text-center p-4 cinzel green-one-bg">
         Transporte de Pets em São Paulo, intermunicipal e interestadual
       </div>
-      <div className="flex justify-center py-4 border-b">
+      <div className="flex justify-center py-4">
         <div className="lg:w-4/12 w-10/12 pt-4 px-6">
           <div onClick={toggleMenu} className="relative bg-white">
             <Image
@@ -78,7 +78,7 @@ const Navbar = () => {
                 ))}
                 <div className="p-4">
                   <Link
-                    href="/agendar-corrida"
+                    href="./agendar-corrida"
                     key="agendar-corrida"
                     className="green-main-bg cinzel rounded-lg text-white justify-center px-6 py-3 w-full flex cursor-pointer"
                   >
@@ -160,13 +160,13 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="lg:flexCenter lg:ml-8 hidden cinzel">
-          <a href="/agendar-corrida">
+          <Link href="./agendar-corrida">
             <Button
               type="button"
               title="Agendar Corrida"
               variant="green-main-bg text-white px-6 py-3"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

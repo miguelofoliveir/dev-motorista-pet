@@ -77,7 +77,7 @@ const Footer = () => {
           27476875/0001-10
         </p>
       </div>
-      <a
+      <Link
         className="fixed lg:bottom-10 bottom-5 lg:right-10 right-5"
         href="/agendar-corrida"
       >
@@ -87,7 +87,7 @@ const Footer = () => {
           width={80}
           height={80}
         />
-      </a>
+      </Link>
     </footer>
   );
 };
