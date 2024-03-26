@@ -1,10 +1,9 @@
 "use client";
-import { NAV_LINKS, NUMBER_LINK_WHATSAPP, SOCIALS } from "@/constants";
+import { NAV_LINKS, SOCIALS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { useEffect, useRef, useState } from "react";
-import ScrollAnimation from "./ScrollAnimation";
 
 const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -32,20 +31,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []); // Array de dependências vazio significa que isso roda uma vez ao montar
-
-  const growVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        duration: 0.5,
-      },
-    },
-  };
 
   return (
     <nav className="w-full relative z-30">

@@ -7,11 +7,6 @@ const leftVariants = {
   visible: { x: 0, opacity: 1, transition: { duration: 1 } },
 };
 
-const rightVariants = {
-  hidden: { x: 100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
-};
-
 const growVariants = {
   hidden: { scale: 0.5, opacity: 0 },
   visible: {
