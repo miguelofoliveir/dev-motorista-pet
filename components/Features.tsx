@@ -6,6 +6,7 @@ import Carousel from "./Carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
+import Link from "next/link";
 
 const partnerLogos = [
   { src: "/logos-parceiros/felipe-becari.png", alt: "parceiro Felipe Becari" },
@@ -95,7 +96,12 @@ const Features = () => {
           </div>
           <div className="lg:w-1/3 lg:pt-0 pt-14 lg:pb-0 pb-8">
             <div className="flex justify-center">
-              <a className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96 w-72" href="./agendar-corrida">agendar corrida</a>
+              <Link
+                className="bold-24 cursor-pointer lg:bold-32 py-2 cinzel green-main-bg text-white text-center rounded-2xl lg:w-96 w-72"
+                href="./agendar-corrida"
+              >
+                agendar corrida
+              </Link>
             </div>
             <div className="flex justify-center mt-4 pr-8">
               <Image
