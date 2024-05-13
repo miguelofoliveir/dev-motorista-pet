@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import CookieConsentModal from "@/components/CookieConsentModal";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Motorista de Pet - Transporte de Pets",
@@ -25,7 +26,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
     <html lang="en">
       <body>
         <Head>
@@ -36,16 +36,22 @@ export default function RootLayout({
           />
         </Head>
       
-         {/* <!-- Google tag (gtag.js) --> */}
-         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-EHYGYYE8XQ"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-EHYGYYE8XQ');
-        </script>
+         {/* Google Tag Manager - gtag.js */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-EHYGYYE8XQ"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EHYGYYE8XQ');
+        `}
+      </Script>
        
         <Navbar />
         <main className="relative overflow-hidden">{children}</main>
@@ -53,6 +59,5 @@ export default function RootLayout({
         <CookieConsentModal />
       </body>
     </html>
-    </>
   );
 }
