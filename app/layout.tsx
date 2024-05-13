@@ -25,6 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <>
     <html lang="en">
       <body>
         <Head>
@@ -34,11 +35,24 @@ export default function RootLayout({
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
+      
+         {/* <!-- Google tag (gtag.js) --> */}
+         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-EHYGYYE8XQ"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-EHYGYYE8XQ');
+        </script>
+       
         <Navbar />
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
         <CookieConsentModal />
       </body>
     </html>
+    </>
   );
 }
