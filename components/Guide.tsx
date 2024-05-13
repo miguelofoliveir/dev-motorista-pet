@@ -37,7 +37,7 @@ const Guide = () => {
             <div className="lg:flex lg:pt-0 pt-4">
               <div className="lg:w-3/12 lg:pt-0 pt-0 lg:pr-4">
                   <p className="regular-14 lg:pt-16 text-justify indent-4">
-                    Ao iniciar um trabalho de transporte de pets, sem pretenção
+                    Ao iniciar um trabalho de transporte de pets, sem pretensão
                     alguma, Renato começou a registrar suas viagens mostrando
                     seu dia-a-dia e como era sua relação com os animais de
                     estimação que levava. Pouco a pouco toda essa exposição foi
