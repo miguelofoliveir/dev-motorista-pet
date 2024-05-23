@@ -116,22 +116,13 @@ export default function SejaMotorista() {
   function enviarParaWhatsApp(formData: FormData) {
     const mensagem = `Olá, aqui estão os dados do formulário de Quero ser Motorista:\nNome: ${formData.nome} ${formData.sobrenome}\nE-mail: ${formData.email}\nCelular: ${formData.celular}\nCEP: ${formData.cep}\nEndereço: ${formData.endereco}\nNúmero: ${formData.numero}\nJá trabalha com transporte de pet? ${formData.transportePet}\nAno do carro: ${formData.anoCarro}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
-    let whatsappUrl = `${NUMBER_LINK_WHATSAPP}?text=${encodeURIComponent(
-      mensagem
-    )}`;
-    if (!isMobile) {
-      // Assume que o NUMBER_LINK_WHATSAPP já contém o número de telefone correto
-      const baseWebUrl = NUMBER_LINK_WHATSAPP.replace(
-        "wa.me",
-        "web.whatsapp.com/send"
-      );
-      whatsappUrl = `${baseWebUrl}&text=${encodeURIComponent(mensagem)}`;
-    }
-
-    window.open(whatsappUrl, "_blank");
-  }
+  
+    const baseUrl = isMobile
+      ? `https://wa.me/5511950644499?text=${encodeURIComponent(mensagem)}`
+      : `https://web.whatsapp.com/send?phone=5511950644499&text=${encodeURIComponent(mensagem)}`;
+  
+    window.open(baseUrl, "_blank");
+  }  
 
   return (
     <section className="green-one-bg">
