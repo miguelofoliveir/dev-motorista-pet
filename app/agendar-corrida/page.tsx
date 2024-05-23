@@ -110,25 +110,16 @@ export default function Contato() {
       minute: "2-digit",
       hour12: false,
     }).format(new Date(formData.dataHora));
-
+  
     const mensagem = `Olá! Gostaria de agendar uma corrida:\nNome: ${formData.nome}\nData e Hora: ${dataHoraFormatada}\nEndereço de Partida: ${formData.enderecoPartida}\nEndereço de Destino: ${formData.enderecoDestino}\nQuantidade de Pets: ${formData.quantidadePets}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    // Utiliza a constante NUMBER_LINK_WHATSAPP e ajusta a URL conforme o dispositivo
-    let whatsappUrl = `${NUMBER_LINK_WHATSAPP}?text=${encodeURIComponent(
-      mensagem
-    )}`;
-    if (!isMobile) {
-      // Assume que o NUMBER_LINK_WHATSAPP já contém o número de telefone correto
-      const baseWebUrl = NUMBER_LINK_WHATSAPP.replace(
-        "wa.me",
-        "web.whatsapp.com/send"
-      );
-      whatsappUrl = `${baseWebUrl}&text=${encodeURIComponent(mensagem)}`;
-    }
-
-    window.open(whatsappUrl, "_blank");
-  }
+  
+    const baseUrl = isMobile
+      ? `https://wa.me/5511950644499?text=${encodeURIComponent(mensagem)}`
+      : `https://web.whatsapp.com/send?phone=5511950644499&text=${encodeURIComponent(mensagem)}`;
+  
+    window.open(baseUrl, "_blank");
+  }  
 
   return (
     <section>
