@@ -10,7 +10,7 @@ interface FormData {
   enderecoPartida: string;
   enderecoDestino: string;
   quantidadePets: string;
-  quantosTutores: string;
+  tutores: string;
   nomePet: string;
   racaPet: string;
   temperamentoPet: string;
@@ -34,11 +34,9 @@ const validationSchema = yup.object().shape({
     .required("O campo Quantidade de Pets é obrigatório.")
     .positive("O número deve ser positivo.")
     .integer("O número deve ser inteiro."),
-  quantosTutores: yup
-    .number()
-    .required("O campo Quantos Tutores Acompanham é obrigatório.")
-    .min(0, "O número deve ser no mínimo 0.")
-    .max(2, "O número deve ser no máximo 2."),
+  tutores: yup
+    .string()
+    .required("O campo Quantos Tutores Acompanham é obrigatório."),
   nomePet: yup.string().required("O campo Nome do Pet é obrigatório."),
   racaPet: yup.string().required("O campo Raça do Pet é obrigatório."),
   temperamentoPet: yup
@@ -55,7 +53,7 @@ export default function Contato() {
     enderecoPartida: "",
     enderecoDestino: "",
     quantidadePets: "",
-    quantosTutores: "0",
+    tutores: "Não",
     nomePet: "",
     racaPet: "",
     temperamentoPet: "",
@@ -135,7 +133,7 @@ export default function Contato() {
   Endereço de Partida: ${formData.enderecoPartida}
   Endereço de Destino: ${formData.enderecoDestino}
   Quantidade de Pets: ${formData.quantidadePets}
-  Quantos Tutores Acompanham: ${formData.quantosTutores}
+  Tutores Acompanham?: ${formData.tutores}
   Nome do Pet: ${formData.nomePet}
   Raça do Pet: ${formData.racaPet}
   Temperamento do Pet: ${formData.temperamentoPet}`;
@@ -269,27 +267,26 @@ export default function Contato() {
                 )}
               </div>
               <div className="flex flex-col">
-                <label htmlFor="quantosTutores" className="mb-2">
+                <label htmlFor="tutores" className="mb-2">
                   Quantos tutores acompanham?
                 </label>
                 <select
-                  name="quantosTutores"
-                  id="quantosTutores"
-                  value={formData.quantosTutores}
+                  name="tutores"
+                  id="tutores"
+                  value={formData.tutores}
                   onChange={handleChange}
                   className={`w-full p-2 border rounded-md shadow-sm focus:outline-none ${
-                    errors.quantosTutores
+                    errors.tutores
                       ? "border-red-500"
                       : "border-gray-300 focus-visible:border-teal-500"
                   }`}
                 >
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
                 </select>
-                {errors.quantosTutores && (
+                {errors.tutores && (
                   <p className="text-red-500 text-sm mt-1">
-                    {errors.quantosTutores}
+                    {errors.tutores}
                   </p>
                 )}
               </div>
