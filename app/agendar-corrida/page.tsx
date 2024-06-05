@@ -268,7 +268,7 @@ export default function Contato() {
               </div>
               <div className="flex flex-col">
                 <label htmlFor="tutores" className="mb-2">
-                  Quantos tutores acompanham?
+                  Tutores acompanham?
                 </label>
                 <select
                   name="tutores"
