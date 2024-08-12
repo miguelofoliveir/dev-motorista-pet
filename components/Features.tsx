@@ -10,7 +10,6 @@ import Link from "next/link";
 
 const partnerLogos = [
   { src: "/logos-parceiros/felipe-becari.png", alt: "parceiro Felipe Becari" },
-  { src: "/logos-parceiros/moovipet.png", alt: "parceiro Moovipet" },
   { src: "/logos-parceiros/bendog.png", alt: "parceiro Bendog" },
   {
     src: "/logos-parceiros/bercario-das-patinhas.png",
