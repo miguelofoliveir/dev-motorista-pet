@@ -239,14 +239,18 @@ const Features = () => {
                     <b>10. Como cancelar uma corrida?</b>
                   </summary>
                   <p className="regular-16  pt-2">
-                    Até duas horas antes não haverá cobrança e o valor será
-                    devolvido.
+                    Cancelamento de corrida (válido apenas para primeira
+                    solicitação e não após reagendamento):
                     <br />
-                    Até uma hora antes haverá cobrança de 40% do valor por conta
-                    do impacto na agenda do motorista e pelo seu deslocamento já
-                    iniciado. <br />
-                    Caso o motorista já esteja no local aguardando o embarque,
-                    será retido 60% do valor.
+                    <br />
+                    - Até duas horas antes não haverá cobrança e o valor total é
+                    devolvido;
+                    <br />
+                    - Se o motorista já estiver à caminho ou no local o valor
+                    total será retido. <br />- Reagendamento de corrida: ficará
+                    como um crédito para ser usado em até 30 dias (caso não seja
+                    usado o valor total é retido). Neste caso não há mais opção
+                    de cancelamento de corrida.
                   </p>
                 </details>
               </div>
